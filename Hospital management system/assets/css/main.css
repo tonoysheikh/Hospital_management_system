@@ -838,6 +838,7 @@ section,
   font-size: 48px;
   font-weight: 700;
   animation: fadeInDown 1s both;
+  padding-left: 30px;
 }
 
 @media (max-width: 768px) {
