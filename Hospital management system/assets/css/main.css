@@ -2369,4 +2369,24 @@ section,
   }
 }
 
+.blood-content{
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.blood-content-top p{
+  margin-bottom: 30px;
+}
+
+.blood-content-mid p{
+  margin-bottom: 30px;
+}
+
+.blood-content-mid ul{
+  margin-bottom: 30px;
+}
+
+.blood-content-bottom{
+  margin-bottom: 30px;
+}
 
