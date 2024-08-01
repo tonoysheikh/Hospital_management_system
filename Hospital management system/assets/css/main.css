@@ -2368,7 +2368,68 @@ section,
     padding-right: 10px;
   }
 }
+.dialysis{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 2%;
+}
+.dia_image{
+  display: block;
+  margin-left: 43%;
+  margin-right: auto;
+  border: 5px solid #060606;
+  border-radius: 5px;
+  padding: 5px;
+  width: 270px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-align: center;
+}
+.emergency{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 2%;
+}
+.emer_image{
+  display: block;
+  margin-left: 43%;
+  margin-right: auto;
+  text-align: center;
+  border: 5px solid #060606;
+  border-radius: 5px;
+  padding: 5px;
+  width: 270px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.icu{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 2%;
+}
+.icu_image{
+  display: block;
+  margin-left: 43%;
+  margin-right: auto;
+  text-align: center;
+  border: 5px solid #060606;
+  border-radius: 5px;
+  padding: 5px;
+  width: 270px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.em_header{
+  font-size: 22px;
+  font-weight:bold;
 
+<<<<<<< Updated upstream
 .blood-content{
   margin-left: 150px;
   margin-right: 150px;
@@ -2388,5 +2449,7 @@ section,
 
 .blood-content-bottom{
   margin-bottom: 30px;
+=======
+>>>>>>> Stashed changes
 }
 
