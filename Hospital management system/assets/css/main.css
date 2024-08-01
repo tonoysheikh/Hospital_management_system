@@ -2428,8 +2428,7 @@ section,
 .em_header{
   font-size: 22px;
   font-weight:bold;
-
-<<<<<<< Updated upstream
+}
 .blood-content{
   margin-left: 150px;
   margin-right: 150px;
@@ -2449,7 +2448,5 @@ section,
 
 .blood-content-bottom{
   margin-bottom: 30px;
-=======
->>>>>>> Stashed changes
 }
 
