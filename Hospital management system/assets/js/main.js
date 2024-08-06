@@ -172,6 +172,7 @@
 })();
 
 // image gallery
+
 $('.portfolio-menu ul li').click(function(){
   $('.portfolio-menu ul li').removeClass('active');
   $(this).addClass('active');
