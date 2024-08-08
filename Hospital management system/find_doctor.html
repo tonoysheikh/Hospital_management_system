@@ -3,13 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Blog - AgriCulture Bootstrap Template</title>
+    <title>Find Doctor - LANS Unit Exchange Hospital</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="./assets/img/favicon.png" rel="icon" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -129,7 +128,7 @@
       </div>
     </header>
 
-    <main class="main">
+    <main class="main" style="background-color: cyan;">
       <!-- Page Title -->
       <div
         class="page-title dark-background"
@@ -153,531 +152,514 @@
       </div>
       <!-- End Page Title -->
 
-      <section class="search">
-        <label style = "display: block;text-align:center;">Doctor Name :</label>
-        <div class="input-container">
-          <input required="" placeholder="Search name..." type="email">
-          <button class="invite-btn" type="button">
-            Search
-          </button>
-        </div>
-      </section>
-
-      <!-- Blog Posts 2 Section -->
-      <section id="blog-posts-2" class="blog-posts-2 section">
-        <div class="container">
+      <div class="container">
+        <input id="searchbar" 
+               onkeyup="search_doctor()" 
+               type="text" name="search" 
+               placeholder="Search Doctor...">
+        <ul id='list'>
           <div class="row gy-4">
             <div class="col-lg-4">
-              <div class="card">
-                <div class="image_container">
-                  <svg
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="image"
-                  >
-                    <path
-                      d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="title">
-                  <span>New brand name</span>
-                </div>
-                <div class="size">
-                  <span>Size</span>
-                  <ul class="list-size">
-                    <li class="item-list">
-                      <button class="item-list-button">37</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">38</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">39</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">40</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">41</button>
-                    </li>
-                  </ul>
-                </div>
-                <div class="action">
-                  <div class="price">
-                    <!-- <span>$299</span> -->
+            <li class="doctor">
+              <div class="col-lg-4">
+                <!-- <article class="position-relative h-100"> -->
+                <div class="card">
+                  <div class="image_container">
+                    
+                    <img class="image" src="https://www.shutterstock.com/image-photo/medical-concept-indian-beautiful-female-600nw-1635029716.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <span class="doctor">Dr. Hippocrates</span>
+                  </div>
+                  <div class="size">
+                    <div class="speciality">
+                      <h3>Speciality - </h3>
+                      <p>Consultant, Dermatology</p>
+                    </div>
+                    <div class="degree">
+                      <h3>Degree- </h3>
+                      <p>MBBS, DDV (SINGAPORE), MSc In Clinical Dermatology (London), MSSVD (London)</p>
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div class="price">
+                      <!-- <span>$299</span> -->
+                      <button class="cart-button">
+                        
+                        <span>Get Appointment</span>
+                      </button>
+                    </div>
                     <button class="cart-button">
-                      <svg
-                        class="cart-icon"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                          stroke-linejoin="round"
-                          stroke-linecap="round"
-                        ></path>
-                      </svg>
-                      <span>Add to cart</span>
+                     
+                      <span>Profile</span>
                     </button>
                   </div>
-                  <button class="cart-button">
-                    <svg
-                      class="cart-icon"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                        stroke-linejoin="round"
-                        stroke-linecap="round"
-                      ></path>
-                    </svg>
-                    <span>Add to cart</span>
-                  </button>
                 </div>
+  
+                
               </div>
-            </div>
-            <!-- End post list item -->
-
-            <div class="col-lg-4">
-              <!-- <article class="position-relative h-100"> -->
-              <div class="card">
-                <div class="image_container">
-                  <svg
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="image"
-                  >
-                    <path
-                      d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="title">
-                  <span>New brand name</span>
-                </div>
-                <div class="size">
-                  <span>Size</span>
-                  <ul class="list-size">
-                    <li class="item-list">
-                      <button class="item-list-button">37</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">38</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">39</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">40</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">41</button>
-                    </li>
-                  </ul>
-                </div>
-                <div class="action">
-                  <div class="price">
-                    <!-- <span>$299</span> -->
-                    <button class="cart-button">
-                      <svg
-                        class="cart-icon"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                          stroke-linejoin="round"
-                          stroke-linecap="round"
-                        ></path>
-                      </svg>
-                      <span>Add to cart</span>
-                    </button>
-                  </div>
-                  <button class="cart-button">
-                    <svg
-                      class="cart-icon"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                        stroke-linejoin="round"
-                        stroke-linecap="round"
-                      ></path>
-                    </svg>
-                    <span>Add to cart</span>
-                  </button>
-                </div>
-              </div>
-
-              <!-- </article> -->
-            </div>
-            <!-- End post list item -->
-
-            <div class="col-lg-4">
-              <!-- <article class="position-relative h-100"> -->
-              <div class="card">
-                <div class="image_container">
-                  <svg
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="image"
-                  >
-                    <path
-                      d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="title">
-                  <span>New brand name</span>
-                </div>
-                <div class="size">
-                  <span>Size</span>
-                  <ul class="list-size">
-                    <li class="item-list">
-                      <button class="item-list-button">37</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">38</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">39</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">40</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">41</button>
-                    </li>
-                  </ul>
-                </div>
-                <div class="action">
-                  <div class="price">
-                    <!-- <span>$299</span> -->
-                    <button class="cart-button">
-                      <svg
-                        class="cart-icon"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                          stroke-linejoin="round"
-                          stroke-linecap="round"
-                        ></path>
-                      </svg>
-                      <span>Add to cart</span>
-                    </button>
-                  </div>
-                  <button class="cart-button">
-                    <svg
-                      class="cart-icon"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                        stroke-linejoin="round"
-                        stroke-linecap="round"
-                      ></path>
-                    </svg>
-                    <span>Add to cart</span>
-                  </button>
-                </div>
-              </div>
-              <!-- </article> -->
-            </div>
-            <!-- End post list item -->
-
-            <div class="col-lg-4">
-              <!-- <article class="position-relative h-100"> -->
-              <div class="card">
-                <div class="image_container">
-                  <svg
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="image"
-                  >
-                    <path
-                      d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="title">
-                  <span>New brand name</span>
-                </div>
-                <div class="size">
-                  <span>Size</span>
-                  <ul class="list-size">
-                    <li class="item-list">
-                      <button class="item-list-button">37</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">38</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">39</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">40</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">41</button>
-                    </li>
-                  </ul>
-                </div>
-                <div class="action">
-                  <div class="price">
-                    <!-- <span>$299</span> -->
-                    <button class="cart-button">
-                      <svg
-                        class="cart-icon"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                          stroke-linejoin="round"
-                          stroke-linecap="round"
-                        ></path>
-                      </svg>
-                      <span>Add to cart</span>
-                    </button>
-                  </div>
-                  <button class="cart-button">
-                    <svg
-                      class="cart-icon"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                        stroke-linejoin="round"
-                        stroke-linecap="round"
-                      ></path>
-                    </svg>
-                    <span>Add to cart</span>
-                  </button>
-                </div>
-              </div>
-              <!-- </article> -->
-            </div>
-            <!-- End post list item -->
-
-            <div class="col-lg-4">
-              <!-- <article class="position-relative h-100"> -->
-              <div class="card">
-                <div class="image_container">
-                  <svg
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="image"
-                  >
-                    <path
-                      d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="title">
-                  <span>New brand name</span>
-                </div>
-                <div class="size">
-                  <span>Size</span>
-                  <ul class="list-size">
-                    <li class="item-list">
-                      <button class="item-list-button">37</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">38</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">39</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">40</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">41</button>
-                    </li>
-                  </ul>
-                </div>
-                <div class="action">
-                  <div class="price">
-                    <!-- <span>$299</span> -->
-                    <button class="cart-button">
-                      <svg
-                        class="cart-icon"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                          stroke-linejoin="round"
-                          stroke-linecap="round"
-                        ></path>
-                      </svg>
-                      <span>Add to cart</span>
-                    </button>
-                  </div>
-                  <button class="cart-button">
-                    <svg
-                      class="cart-icon"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                        stroke-linejoin="round"
-                        stroke-linecap="round"
-                      ></path>
-                    </svg>
-                    <span>Add to cart</span>
-                  </button>
-                </div>
-              </div>
-              <!-- </article> -->
-            </div>
-            <!-- End post list item -->
-
-            <div class="col-lg-4">
-              <!-- <article class="position-relative h-100 "> -->
-              <div class="card">
-                <div class="image_container">
-                  <svg
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="image"
-                  >
-                    <path
-                      d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="title">
-                  <span>New brand name</span>
-                </div>
-                <div class="size">
-                  <span>Size</span>
-                  <ul class="list-size">
-                    <li class="item-list">
-                      <button class="item-list-button">37</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">38</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">39</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">40</button>
-                    </li>
-                    <li class="item-list">
-                      <button class="item-list-button">41</button>
-                    </li>
-                  </ul>
-                </div>
-                <div class="action">
-                  <div class="price">
-                    <!-- <span>$299</span> -->
-                    <button class="cart-button">
-                      <svg
-                        class="cart-icon"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                          stroke-linejoin="round"
-                          stroke-linecap="round"
-                        ></path>
-                      </svg>
-                      <span>Add to cart</span>
-                    </button>
-                  </div>
-                  <button class="cart-button">
-                    <svg
-                      class="cart-icon"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                        stroke-linejoin="round"
-                        stroke-linecap="round"
-                      ></path>
-                    </svg>
-                    <span>Add to cart</span>
-                  </button>
-                </div>
-              </div>
-              <!-- </article> -->
-            </div>
-            <!-- End post list item -->
+            </li>
           </div>
-        </div>
-      </section>
-      <!-- /Blog Posts 2 Section -->
-
-      <!-- Blog Pagination Section -->
-      <section id="blog-pagination" class="blog-pagination section">
-        <div class="container">
-          <div class="d-flex justify-content-center">
-            <ul>
-              <li>
-                <a href="#"><i class="bi bi-chevron-left"></i></a>
-              </li>
-              <li><a href="#">1</a></li>
-              <li><a href="#" class="active">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li>...</li>
-              <li><a href="#">10</a></li>
-              <li>
-                <a href="#"><i class="bi bi-chevron-right"></i></a>
-              </li>
-            </ul>
+          <div class="col-lg-4"> 
+            <li class="doctor">
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="image_container">
+                    <img class="image" src="https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <span class="doctor">a</span>
+                  </div>
+                  <div class="size">
+                    <div class="size">
+                      <div class="speciality">
+                        <h3>Speciality - </h3>
+                        <p>Consultant, Dermatology</p>
+                      </div>
+                      <div class="degree">
+                        <h3>Degree- </h3>
+                        <p>MBBS, DDV (SINGAPORE), MSc In Clinical Dermatology (London), MSSVD (London)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div class="price">
+                      <button class="cart-button">
+                        
+                        <span>Get Appointment</span>
+                      </button>
+                    </div>
+                    <button class="cart-button">
+                     
+                      <span>Profile</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
           </div>
-        </div>
-      </section>
-      <!-- /Blog Pagination Section -->
+          <div class="col-lg-4">
+            <li class="doctor">
+              <div class="col-lg-4">
+                <!-- <article class="position-relative h-100"> -->
+                <div class="card">
+                  <div class="image_container">
+                    
+                    <img class="image" src="https://www.shutterstock.com/image-photo/medical-concept-indian-beautiful-female-600nw-1635029716.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <span class="doctor">Dr. mike</span>
+                  </div>
+                  <div class="size">
+                    <div class="speciality">
+                      <h3>Speciality - </h3>
+                      <p>Consultant, Dermatology</p>
+                    </div>
+                    <div class="degree">
+                      <h3>Degree- </h3>
+                      <p>MBBS, DDV (SINGAPORE), MSc In Clinical Dermatology (London), MSSVD (London)</p>
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div class="price">
+                      <!-- <span>$299</span> -->
+                      <button class="cart-button">
+                        
+                        <span>Get Appointment</span>
+                      </button>
+                    </div>
+                    <button class="cart-button">
+                     
+                      <span>Profile</span>
+                    </button>
+                  </div>
+                </div>
+  
+                
+              </div>
+            </li>
+          </div>
+          <div class="col-lg-4">
+            <li class="doctor">
+              <div class="col-lg-4">
+                <!-- <article class="position-relative h-100"> -->
+                <div class="card">
+                  <div class="image_container">
+                    
+                    <img class="image" src="https://www.shutterstock.com/image-photo/medical-concept-indian-beautiful-female-600nw-1635029716.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <span class="doctor">Dr. William Osler</span>
+                  </div>
+                  <div class="size">
+                    <div class="speciality">
+                      <h3>Speciality - </h3>
+                      <p>Consultant, Dermatology</p>
+                    </div>
+                    <div class="degree">
+                      <h3>Degree- </h3>
+                      <p>MBBS, DDV (SINGAPORE), MSc In Clinical Dermatology (London), MSSVD (London)</p>
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div class="price">
+                      <!-- <span>$299</span> -->
+                      <button class="cart-button">
+                        
+                        <span>Get Appointment</span>
+                      </button>
+                    </div>
+                    <button class="cart-button">
+                     
+                      <span>Profile</span>
+                    </button>
+                  </div>
+                </div>
+  
+                
+              </div>
+            </li>
+          </div>
+
+          <div class="col-lg-4">
+            <li class="doctor">
+              <div class="col-lg-4">
+                <!-- <article class="position-relative h-100"> -->
+                <div class="card">
+                  <div class="image_container">
+                    
+                    <img class="image" src="https://www.shutterstock.com/image-photo/medical-concept-indian-beautiful-female-600nw-1635029716.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <span class="doctor">Dr. Elizabeth Blackwell</span>
+                  </div>
+                  <div class="size">
+                    <div class="speciality">
+                      <h3>Speciality - </h3>
+                      <p>Consultant, Dermatology</p>
+                    </div>
+                    <div class="degree">
+                      <h3>Degree- </h3>
+                      <p>MBBS, DDV (SINGAPORE), MSc In Clinical Dermatology (London), MSSVD (London)</p>
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div class="price">
+                      <!-- <span>$299</span> -->
+                      <button class="cart-button">
+                        
+                        <span>Get Appointment</span>
+                      </button>
+                    </div>
+                    <button class="cart-button">
+                     
+                      <span>Profile</span>
+                    </button>
+                  </div>
+                </div>
+  
+                
+              </div>
+            </li>
+          </div>
+
+          <div class="col-lg-4">
+            <li class="doctor">
+              <div class="col-lg-4">
+                <!-- <article class="position-relative h-100"> -->
+                <div class="card">
+                  <div class="image_container">
+                    
+                    <img class="image" src="https://www.shutterstock.com/image-photo/medical-concept-indian-beautiful-female-600nw-1635029716.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <span class="doctor">Dr. Paul Farmer</span>
+                  </div>
+                  <div class="size">
+                    <div class="speciality">
+                      <h3>Speciality - </h3>
+                      <p>Consultant, Dermatology</p>
+                    </div>
+                    <div class="degree">
+                      <h3>Degree- </h3>
+                      <p>MBBS, DDV (SINGAPORE), MSc In Clinical Dermatology (London), MSSVD (London)</p>
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div class="price">
+                      <!-- <span>$299</span> -->
+                      <button class="cart-button">
+                        
+                        <span>Get Appointment</span>
+                      </button>
+                    </div>
+                    <button class="cart-button">
+                     
+                      <span>Profile</span>
+                    </button>
+                  </div>
+                </div>
+  
+                
+              </div>
+            </li>
+          </div>
+
+          <div class="col-lg-4">
+            <li class="doctor">
+              <div class="col-lg-4">
+                <!-- <article class="position-relative h-100"> -->
+                <div class="card">
+                  <div class="image_container">
+                    
+                    <img class="image" src="https://www.shutterstock.com/image-photo/medical-concept-indian-beautiful-female-600nw-1635029716.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <span class="doctor">Dr. Patricia Bath </span>
+                  </div>
+                  <div class="size">
+                    <div class="speciality">
+                      <h3>Speciality - </h3>
+                      <p>Consultant, Dermatology</p>
+                    </div>
+                    <div class="degree">
+                      <h3>Degree- </h3>
+                      <p>MBBS, DDV (SINGAPORE), MSc In Clinical Dermatology (London), MSSVD (London)</p>
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div class="price">
+                      <!-- <span>$299</span> -->
+                      <button class="cart-button">
+                        
+                        <span>Get Appointment</span>
+                      </button>
+                    </div>
+                    <button class="cart-button">
+                     
+                      <span>Profile</span>
+                    </button>
+                  </div>
+                </div>
+  
+                
+              </div>
+            </li>
+          </div>
+
+          <div class="col-lg-4">
+            <li class="doctor">
+              <div class="col-lg-4">
+                <!-- <article class="position-relative h-100"> -->
+                <div class="card">
+                  <div class="image_container">
+                    
+                    <img class="image" src="https://www.shutterstock.com/image-photo/medical-concept-indian-beautiful-female-600nw-1635029716.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <span class="doctor">Dr. Gerty Cori </span>
+                  </div>
+                  <div class="size">
+                    <div class="speciality">
+                      <h3>Speciality - </h3>
+                      <p>Consultant, Dermatology</p>
+                    </div>
+                    <div class="degree">
+                      <h3>Degree- </h3>
+                      <p>MBBS, DDV (SINGAPORE), MSc In Clinical Dermatology (London), MSSVD (London)</p>
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div class="price">
+                      <!-- <span>$299</span> -->
+                      <button class="cart-button">
+                        
+                        <span>Get Appointment</span>
+                      </button>
+                    </div>
+                    <button class="cart-button">
+                     
+                      <span>Profile</span>
+                    </button>
+                  </div>
+                </div>
+  
+                
+              </div>
+            </li>
+          </div>
+
+          <div class="col-lg-4">
+            <li class="doctor">
+              <div class="col-lg-4">
+                <!-- <article class="position-relative h-100"> -->
+                <div class="card">
+                  <div class="image_container">
+                    
+                    <img class="image" src="https://www.shutterstock.com/image-photo/medical-concept-indian-beautiful-female-600nw-1635029716.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <span class="doctor">Dr. Jonas Salk</span>
+                  </div>
+                  <div class="size">
+                    <div class="speciality">
+                      <h3>Speciality - </h3>
+                      <p>Consultant, Dermatology</p>
+                    </div>
+                    <div class="degree">
+                      <h3>Degree- </h3>
+                      <p>MBBS, DDV (SINGAPORE), MSc In Clinical Dermatology (London), MSSVD (London)</p>
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div class="price">
+                      <!-- <span>$299</span> -->
+                      <button class="cart-button">
+                        
+                        <span>Get Appointment</span>
+                      </button>
+                    </div>
+                    <button class="cart-button">
+                     
+                      <span>Profile</span>
+                    </button>
+                  </div>
+                </div>
+  
+                
+              </div>
+            </li>
+          </div>
+
+          <div class="col-lg-4">
+            <li class="doctor">
+              <div class="col-lg-4">
+                <!-- <article class="position-relative h-100"> -->
+                <div class="card">
+                  <div class="image_container">
+                    
+                    <img class="image" src="https://www.shutterstock.com/image-photo/medical-concept-indian-beautiful-female-600nw-1635029716.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <span class="doctor">Dr. Virginia Apgar</span>
+                  </div>
+                  <div class="size">
+                    <div class="speciality">
+                      <h3>Speciality - </h3>
+                      <p>Consultant, Dermatology</p>
+                    </div>
+                    <div class="degree">
+                      <h3>Degree- </h3>
+                      <p>MBBS, DDV (SINGAPORE), MSc In Clinical Dermatology (London), MSSVD (London)</p>
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div class="price">
+                      <!-- <span>$299</span> -->
+                      <button class="cart-button">
+                        
+                        <span>Get Appointment</span>
+                      </button>
+                    </div>
+                    <button class="cart-button">
+                     
+                      <span>Profile</span>
+                    </button>
+                  </div>
+                </div>
+  
+                
+              </div>
+            </li>
+          </div>
+
+          <div class="col-lg-4">
+            <li class="doctor">
+              <div class="col-lg-4">
+                <!-- <article class="position-relative h-100"> -->
+                <div class="card">
+                  <div class="image_container">
+                    
+                    <img class="image" src="https://www.shutterstock.com/image-photo/medical-concept-indian-beautiful-female-600nw-1635029716.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <span class="doctor">Dr. jone</span>
+                  </div>
+                  <div class="size">
+                    <div class="speciality">
+                      <h3>Speciality - </h3>
+                      <p>Consultant, Dermatology</p>
+                    </div>
+                    <div class="degree">
+                      <h3>Degree- </h3>
+                      <p>MBBS, DDV (SINGAPORE), MSc In Clinical Dermatology (London), MSSVD (London)</p>
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div class="price">
+                      <!-- <span>$299</span> -->
+                      <button class="cart-button">
+                        
+                        <span>Get Appointment</span>
+                      </button>
+                    </div>
+                    <button class="cart-button">
+                     
+                      <span>Profile</span>
+                    </button>
+                  </div>
+                </div>
+  
+                
+              </div>
+            </li>
+          </div>
+
+          <div class="col-lg-4">
+            <li class="doctor">
+              <div class="col-lg-4">
+                <!-- <article class="position-relative h-100"> -->
+                <div class="card">
+                  <div class="image_container">
+                    
+                    <img class="image" src="https://www.shutterstock.com/image-photo/medical-concept-indian-beautiful-female-600nw-1635029716.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <span class="doctor">Dr. Helen Brooke</span>
+                  </div>
+                  <div class="size">
+                    <div class="speciality">
+                      <h3>Speciality - </h3>
+                      <p>Consultant, Dermatology</p>
+                    </div>
+                    <div class="degree">
+                      <h3>Degree- </h3>
+                      <p>MBBS, DDV (SINGAPORE), MSc In Clinical Dermatology (London), MSSVD (London)</p>
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div class="price">
+                      <!-- <span>$299</span> -->
+                      <button class="cart-button">
+                        
+                        <span>Get Appointment</span>
+                      </button>
+                    </div>
+                    <button class="cart-button">
+                     
+                      <span>Profile</span>
+                    </button>
+                  </div>
+                </div>
+  
+                
+              </div>
+            </li>
+          </div>
+          </div>
+        </ul>
+    </div>
+
 
       <!-- Call To Action Section -->
       <section
