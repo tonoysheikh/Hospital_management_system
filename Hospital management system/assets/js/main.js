@@ -173,41 +173,37 @@
 
 // image gallery
 
-$('.portfolio-menu ul li').click(function(){
-  $('.portfolio-menu ul li').removeClass('active');
-  $(this).addClass('active');
-  
-  var selector = $(this).attr('data-filter');
-  $('.portfolio-item').isotope({
-    filter:selector
+$(".portfolio-menu ul li").click(function () {
+  $(".portfolio-menu ul li").removeClass("active");
+  $(this).addClass("active");
+
+  var selector = $(this).attr("data-filter");
+  $(".portfolio-item").isotope({
+    filter: selector,
   });
-  return  false;
+  return false;
 });
-$(document).ready(function() {
-var popup_btn = $('.popup-btn');
-popup_btn.magnificPopup({
-type : 'image',
-gallery : {
-  enabled : true
-}
-});
+$(document).ready(function () {
+  var popup_btn = $(".popup-btn");
+  popup_btn.magnificPopup({
+    type: "image",
+    gallery: {
+      enabled: true,
+    },
+  });
 });
 
 function search_doctor() {
-  let input = document.getElementById('searchbar').value
+  let input = document.getElementById("searchbar").value;
   input = input.toLowerCase();
-  let x = document.getElementsByClassName('doctor');
+  let x = document.getElementsByClassName("doctor");
 
   for (i = 0; i < x.length; i++) {
     if (!x[i].innerHTML.toLowerCase().includes(input)) {
       x[i].style.display = "none";
-    }
-    else {
+    } else {
       x[i].style.display = "list-item";
-      
     }
   }
 }
-
-
 
