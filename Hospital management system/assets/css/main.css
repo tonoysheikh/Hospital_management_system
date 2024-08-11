@@ -1250,7 +1250,7 @@ section,
 }
 
 .testimonials .testimonial blockquote p {
-  font-size: 20px;
+  font-size: 16px;
   color: var(--default-color);
   font-weight: 500;
 }
@@ -2714,4 +2714,52 @@ section,
 .pp-image{
   width: 100%;
   height: 300px;
+}
+
+@media only screen and (max-width: 480px) {
+  .blood-content{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .call-to-action .content{
+    text-align: center;
+  }
+  .emer_image{
+    margin-left:15%;
+  }
+  .dia_image{
+    margin-left: 15%;
+  }
+  #searchbar{
+    width: 75%;
+  }
+  .card{
+    margin-left:0px;
+  }
+  .contact .info {
+    margin: 20px;
+  }
+  .contact .php-email-form {
+    width:90%;
+    margin: 20px;
+  }
+  .single-item{
+    margin: 19px 23px;
+  }
+  .table{
+    margin-left:5%;
+    width: 90%;
+  }
+  .container{
+    width: 90%;
+  }
+  .icu{
+    margin: 0;
+  }
+  .portfolio-menu ul li {
+    margin: 3px;
+  }
+  .careline {
+    font-size: 28px;
+  }
 }
