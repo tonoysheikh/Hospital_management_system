@@ -2299,7 +2299,7 @@ section,
 
 /* equipment css box design */
 
-.careline{
+.careline {
   font-size: 35px;
 }
 
@@ -2361,23 +2361,23 @@ section,
   padding-right: 15px;
 }
 @media only screen and (min-width: 768px) {
-  .complete-content img{
+  .complete-content img {
     width: 230px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .complete-content img{
+  .complete-content img {
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-.dialysis{
+.dialysis {
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 2%;
 }
-.dia_image{
+.dia_image {
   display: block;
   margin-left: 43%;
   margin-right: auto;
@@ -2391,12 +2391,12 @@ section,
   -o-border-radius: 5px;
   text-align: center;
 }
-.emergency{
+.emergency {
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 2%;
 }
-.emer_image{
+.emer_image {
   display: block;
   margin-left: 43%;
   margin-right: auto;
@@ -2410,12 +2410,12 @@ section,
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.icu{
+.icu {
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 2%;
 }
-.icu_image{
+.icu_image {
   display: block;
   margin-left: 43%;
   margin-right: auto;
@@ -2429,83 +2429,82 @@ section,
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.em_header{
+.em_header {
   font-size: 22px;
-  font-weight:bold;
+  font-weight: bold;
 }
-.blood-content{
+.blood-content {
   margin-left: 150px;
   margin-right: 150px;
 }
 
-.blood-content-top p{
+.blood-content-top p {
   margin-bottom: 30px;
 }
 
-.blood-content-mid p{
+.blood-content-mid p {
   margin-bottom: 30px;
 }
 
-.blood-content-mid ul{
+.blood-content-mid ul {
   margin-bottom: 30px;
 }
 
-.blood-content-bottom{
+.blood-content-bottom {
   margin-bottom: 30px;
 }
-
 
 /* image gallery */
-.portfolio-menu{
-	text-align:center;
+.portfolio-menu {
+  text-align: center;
 }
-.portfolio-menu ul li{
-	display:inline-block;
-	margin:0;
-	list-style:none;
-	padding:10px 15px;
-	cursor:pointer;
-	-webkit-transition:all 05s ease;
-	-moz-transition:all 05s ease;
-	-ms-transition:all 05s ease;
-	-o-transition:all 05s ease;
-	transition:all .5s ease;
+.portfolio-menu ul li {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  -webkit-transition: all 05s ease;
+  -moz-transition: all 05s ease;
+  -ms-transition: all 05s ease;
+  -o-transition: all 05s ease;
+  transition: all 0.5s ease;
 }
 
-.portfolio-item .item{
-	/*width:303px;*/
-	float:left;
-	margin-bottom:10px;
+.portfolio-item .item {
+  /*width:303px;*/
+  float: left;
+  margin-bottom: 10px;
 }
 
 /* anesthesia  */
-.complete-content-anesthesia{
+.complete-content-anesthesia {
   margin-left: 150px;
   margin-right: 150px;
 }
-.container-top{
+.container-top {
   line-height: 28px;
   margin-bottom: 50px;
 }
-.container-top h2{
-  font-size:18px;
-  font-weight:bold;
+.container-top h2 {
+  font-size: 18px;
+  font-weight: bold;
 }
-.container-top li{
-  font-weight:450;
+.container-top li {
+  font-weight: 450;
 }
-.container-buttom{
+.container-buttom {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 
-.container-buttom img{
+.container-buttom img {
   width: 300px;
   height: 200px;
 }
 
 /* find doctor */
- .card {
+.card {
   --bg-card: #27272a;
   --primary: #6d28d9;
   --primary-800: #4c1d95;
@@ -2549,12 +2548,12 @@ section,
   height: 100%;
   fill: var(--light);
 }
- .image_container-doctor img{
+.image_container-doctor img {
   width: 626px;
   height: 417px;
-} 
+}
 
- .title {
+.title {
   overflow: clip;
   width: 100%;
   font-size: 1rem;
@@ -2645,26 +2644,24 @@ section,
 .cart-button .cart-icon {
   width: 1rem;
 }
-.speciality{
+.speciality {
   display: flex;
-
 }
-.speciality h3{
+.speciality h3 {
   font-size: 13px;
   color: rgb(219, 203, 203);
 }
-.speciality p{
+.speciality p {
   padding-left: 5px;
 }
-.degree{
+.degree {
   display: flex;
-
 }
-.degree h3{
+.degree h3 {
   font-size: 13px;
   color: rgb(219, 203, 203);
 }
-.degree p{
+.degree p {
   padding-left: 5px;
 }
 .container-doctor {
@@ -2701,59 +2698,89 @@ section,
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(-10px);
+    opacity: 0;
+    transform: translateY(-10px);
   }
 
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
-} 
+}
 
-.pp-image{
+.pp-image {
   width: 100%;
   height: 300px;
 }
 
+#message {
+  height: 290px;
+  padding: 10px 12px;
+}
+
+.send {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border: 0;
+  padding: 13px 40px;
+  transition: 0.4s;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+#name{
+  height: 48px;
+  padding: 10px 15px;
+}
+
+#email{
+  height: 48px;
+  padding: 10px 15px;
+}
+
+#subject{
+  height: 48px;
+  padding: 10px 15px;
+}
+
 @media only screen and (max-width: 480px) {
-  .blood-content{
+  .blood-content {
     margin-left: 40px;
     margin-right: 40px;
   }
-  .call-to-action .content{
+  .call-to-action .content {
     text-align: center;
   }
-  .emer_image{
-    margin-left:15%;
-  }
-  .dia_image{
+  .emer_image {
     margin-left: 15%;
   }
-  #searchbar{
+  .dia_image {
+    margin-left: 15%;
+  }
+  #searchbar {
     width: 78%;
   }
-  .card{
-    margin-left:0px;
+  .card {
+    margin-left: 0px;
   }
   .contact .info {
     margin: 7px;
   }
   .contact .php-email-form {
-    width:90%;
+    width: 90%;
     margin: 20px;
   }
-  .single-item{
+  .single-item {
     margin: 19px 23px;
   }
-  .table{
-    margin-left:5%;
+  .table {
+    margin-left: 5%;
     width: 90%;
   }
-  .container{
+  .container {
     width: 90%;
   }
-  .icu{
+  .icu {
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -2763,20 +2790,20 @@ section,
   .careline {
     font-size: 25px;
   }
-  .complete-content-anesthesia{
+  .complete-content-anesthesia {
     margin-left: 30px;
     margin-right: 30px;
   }
-  .page-title h1{
-    font-size:30px;
+  .page-title h1 {
+    font-size: 30px;
   }
-  .sz{
-    margin : 0;
+  .sz {
+    margin: 0;
   }
-  .container-buttom{
+  .container-buttom {
     display: block;
-  } 
-  .container-buttom img{
-    margin-bottom : 10px;
+  }
+  .container-buttom img {
+    margin-bottom: 10px;
   }
 }
