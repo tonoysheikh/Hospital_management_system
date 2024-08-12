@@ -2731,7 +2731,7 @@ section,
     margin-left: 15%;
   }
   #searchbar{
-    width: 75%;
+    width: 78%;
   }
   .card{
     margin-left:0px;
@@ -2772,5 +2772,11 @@ section,
   }
   .sz{
     margin : 0;
+  }
+  .container-buttom{
+    display: block;
+  } 
+  .container-buttom img{
+    margin-bottom : 10px;
   }
 }
