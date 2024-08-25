@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Patient Feedback-LANS unity exchange hospital</title>
+    <title>ICU - LANS Unit Hospital</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -36,19 +37,11 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("32W4ooI2ChxJj81Qy");
-      })();
-    </script>
   </head>
 
-  <body class="contact-page">
-    <header
+  <body class="about-page">
+    
+  <header
       id="header"
       class="header d-flex align-items-center position-relative"
     >
@@ -78,14 +71,9 @@
                   <ul>
                     <li><a href="brain.html">Brain & Spine Center</a></li>
                     <li><a href="bone.html">Bone & Joint Center</a></li>
-                    <li><a href="gastro.html">Gastro Liver Center</a></li>
+                    <li><a href="gestro.html">Gastro Liver Center</a></li>
                     <li><a href="mother.html">Mother & Child Center</a></li>
-                    <li>
-                      <a href="nephrologycenter.html"
-                        >Nephrology & Urology <br />
-                        Center</a
-                      >
-                    </li>
+                    <li><a href="nephrologycenter.html">Nephrology & Urology <br> Center</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
@@ -136,134 +124,49 @@
         </nav>
       </div>
     </header>
-
     <main class="main">
       <!-- Page Title -->
       <div
         class="page-title dark-background"
         data-aos="fade"
-        style="background-image: url(assets/img/contact-cover.jpg)"
+        style="background-image: url(./assets/img/icu-cover.jpeg)"
       >
         <div class="container position-relative">
-          <div data-aos="fade-down">
-            <h1>Contact us</h1>
-          </div>
-
-          <!-- <p>Home / In-patients feedback</p> -->
+          <h1>ICU </h1>
+          <p>
+            "Quality is never an accident. It is always the result of
+            intelligent effort."
+          </p>
           <nav class="breadcrumbs">
             <ol>
               <li><a href="index.html">Home</a></li>
-              <li class="current">Patient Feedback</li>
+              <li><a href="current">Icu</a></li>
             </ol>
           </nav>
         </div>
       </div>
       <!-- End Page Title -->
 
-      <!-- Contact Section -->
-      <section id="contact" class="contact section">
-        <div class="mb-5">
-          <iframe
-            style="width: 100%; height: 400px"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55353.33579982706!2d90.3432366468594!3d23.756938843350195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9ddba0d17ab%3A0xb4eb89d44152e3d5!2sSonargaon%20University!5e0!3m2!1sen!2sbd!4v1722438823195!5m2!1sen!2sbd"
-            frameborder="0"
-            allowfullscreen=""
-          ></iframe>
+      <section class="complete-content">
+        <div class="icu">
+            <p>
+                <b>Our Intensive Care Unit (ICU)</b> is a specialized facility dedicated to patients who require intensive monitoring, nursing care and complex respiratory support. The ICU is staffed 24 hours a day by board-certified specialists and seasoned critical care nurses, nurse practitioners and physician assistants, who are committed to providing quality clinical care.
+            </p>
+            <p>
+                This facility leverages advanced technology to ensure patient safety. Patients’ vital signs are transmitted to a central nursing station manned around the clock by our qualified nurses, so the ICU team is able to respond to any changes in time.
+            </p>
+            <p>
+                With a ceiling-mounted service unit to deliver critical power and house medical equipment, the beds in our ICU are no longer tethered to the wall. This allows the beds to be rotated and positioned freely to the most optimum environment. The ICU is also positioned in close proximity to the operating theatres so patients can receive emergency treatment as quickly as possible.
+            </p>
         </div>
-        <!-- End Google Maps -->
 
-        <div class="container" data-aos="fade">
-          <div class="row gy-5 gx-lg-5">
-            <div class="col-lg-4">
-              <div class="info">
-                <h3>Get in touch</h3>
-                <p>
-                  "For any inquiries, please feel free to reach out to us at the
-                  following address.
-                </p>
-
-                <div class="info-item d-flex">
-                  <i class="bi bi-geo-alt flex-shrink-0"></i>
-                  <div>
-                    <h4>Location:</h4>
-                    <p>147/I, Green Road, Tejgaon, Dhaka-1215, Bangladesh.</p>
-                  </div>
-                </div>
-                <!-- End Info Item -->
-
-                <div class="info-item d-flex">
-                  <i class="bi bi-envelope flex-shrink-0"></i>
-                  <div>
-                    <h4>Email:</h4>
-                    <p>lanshospital@example.com</p>
-                  </div>
-                </div>
-                <!-- End Info Item -->
-
-                <div class="info-item d-flex">
-                  <i class="bi bi-phone flex-shrink-0"></i>
-                  <div>
-                    <h4>Help center:</h4>
-                    <p>+880 17879 59587</p>
-                  </div>
-                </div>
-                <!-- End Info Item -->
-              </div>
-            </div>
-
-            <div class="col-lg-8">
-              
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Your Name"
-                    required=""
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input
-                    type="email"
-                    class="form-control"
-                    name="email"
-                    id="email"
-                    placeholder="Your Email"
-                    required=""
-                  />
-                </div>
-              </div>
-
-              <div class="form-group mt-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="subject"
-                  placeholder="Subject"
-                  required=""
-                />
-              </div>
-
-
-              <div class="form-group mt-3">
-                <textarea
-                  id="message"
-                  class="form-control"
-                  name="message"
-                  placeholder="Message"
-                  required=""
-                ></textarea>
-              </div>
-              <div class="text-center">
-                <button class="send" type="submit" onclick="sendMail()">Send Message</button>
-              </div>
-            </div>
-            <!-- End Contact Form -->
+        <div data-aos="fade-right">
+          <div class="emer_image">
+            <img src="https://t3.ftcdn.net/jpg/07/33/66/56/360_F_733665662_RuxMlm2diYoWtEAZg5qkpMSMKST5aY20.jpg" alt="image">
           </div>
         </div>
+        
       </section>
-      <!-- /Contact Section -->
 
       <!-- Call To Action Section -->
       <section
@@ -274,6 +177,7 @@
           <div class="container">
             <div class="row align-items-center">
               <div class="col-lg-6">
+                
                 <div data-aos="fade-right">
                   <h3>Book an Appointment</h3>
                   <p class="opacity-50">
@@ -346,11 +250,7 @@
                 <li><a href="bone.html">Bone & Joint Center</a></li>
                 <li><a href="gestro.html">Gastro Liver Center</a></li>
                 <li><a href="mother.html">Mother & Child Center</a></li>
-                <li>
-                  <a href="nephrologycenter.html"
-                    >Nephrology & Urology Center</a
-                  >
-                </li>
+                <li><a href="nephrologycenter.html">Nephrology & Urology Center</a></li>
               </ul>
             </div>
 
@@ -411,35 +311,13 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
-    <!-- <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script>
-      function sendMail() {
-        var params = {
-          name: document.getElementById("name").value,
-          email: document.getElementById("email").value,
-          message: document.getElementById("message").value,
-        };
-
-        const serviceID = "service_iacpzzq";
-        const templateID = "template_lnooqgk";
-
-        emailjs
-          .send(serviceID, templateID, params)
-          .then((res) => {
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("message").value = "";
-            console.log(res);
-            alert("Your message sent successfully");
-          })
-          .catch((err) => console.log(err));
-      }
-    </script>
   </body>
 </html>
