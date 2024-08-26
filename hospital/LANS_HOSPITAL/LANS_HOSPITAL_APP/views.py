@@ -11,45 +11,45 @@ def home(request):
 def media(request):
     return render(request ,"media.html")
 
-def test(request):
+def brain(request):
     return render(request ,"brain.html")
-def test(request):
+def bone(request):
     return render(request ,"bone.html")
-def test(request):
+def gastro(request):
     return render(request ,"gastro.html")
-def test(request):
+def mother(request):
     return render(request ,"mother.html")
-def test(request):
+def nephrologycenter(request):
     return render(request ,"nephrologycenter.html")
-def test(request):
+def anesthesia(request):
     return render(request ,"anesthesia.html")
-def test(request):
+def urology(request):
     return render(request ,"urology.html")
-def test(request):
+def Psychologist(request):
     return render(request ,"Psychologist.html")
-def test(request):
+def ophthalmology(request):
     return render(request ,"ophthalmology.html")
-def test(request):
+def nephrology(request):
     return render(request ,"nephrology.html")
-def test(request):
+def find_doctor(request):
     return render(request ,"find_doctor.html")
-def test(request):
+def blood_bank(request):
     return render(request ,"blood_bank.html")
-def test(request):
+def ICU(request):
     return render(request ,"ICU.html")
-def test(request):
+def emergency_service(request):
     return render(request ,"emergency_service.html")
-def test(request):
+def dialysis_cantre(request):
     return render(request ,"dialysis_cantre.html")
-def test(request):
+def feedback(request):
     return render(request ,"feedback.html")
-def test(request):
+def equipment(request):
     return render(request ,"equipment.html")
-def test(request):
+def room(request):
     return render(request ,"room.html")
-def test(request):
+def about(request):
     return render(request ,"about.html")
-def test(request):
+def room(request):
     return render(request ,"room.html")
-def test(request):
+def contact(request):
     return render(request ,"contact.html")
