@@ -4,7 +4,11 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>LANS unity exchange hospital</title>
+    <title>
+      {% block title %}
+      LANS unity exchange hospital
+      {% endblock %}
+    </title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -54,7 +58,7 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="/app/index">HOME</a></li>
+            <li><a href="/app/home">HOME</a></li>
             <li class="dropdown">
               <a href="#"
                 ><span></span>DEPARTMENTS<i

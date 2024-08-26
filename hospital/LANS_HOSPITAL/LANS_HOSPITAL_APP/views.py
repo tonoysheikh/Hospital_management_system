@@ -32,7 +32,72 @@ def ophthalmology(request):
 def nephrology(request):
     return render(request ,"nephrology.html")
 def find_doctor(request):
-    return render(request ,"find_doctor.html")
+    doctors = {
+        "doctor1" : {
+            "name" : "Tanni",
+            "speciality" : "Consultant, Dermatology",
+            "degree" : "MBBS, DDV (SINGAPORE), MSc In Clinical Dermatology (London), MSSVD (London)"
+        },
+        "doctor2" : {
+            "name" : "Dr. Rahul",
+            "speciality" : "Medical Anthropology, Public Health",
+            "degree" : "MD (Doctor of Medicine), PhD (Doctor of Philosophy)"
+        },
+        "doctor3" : {
+            "name" : "Dr. Nadiya",
+            "speciality" : "Neurosurgery",
+            "degree" : "MD (Doctor of Medicine), MPH (Master of Public Health)"
+        },
+       "doctor4" : {
+            "name" : "Dr. Limon",
+            "speciality" : "Virology",
+            "degree" : "MD (Developer of the polio vaccine)"
+        },
+        "doctor5" : {
+            "name" : "Dr. Halima",
+            "speciality" : "Immunology, Infectious Diseases",
+            "degree" : "MD (Doctor of Medicine)"
+        },
+        "doctor6" : {
+            "name" : "Dr. Krisna",
+            "speciality" : "Pulmonology",
+            "degree" : " MD (Inventor of the stethoscope)"
+        },
+        "doctor7" : {
+            "name" :"Dr. Bidhan",
+            "speciality" : "Pediatric Neurosurgery",
+            "degree" : "MD (Doctor of Medicine)"
+        },
+        "doctor8" : {
+            "name" :"Dr.Susmita",
+            "speciality" : "Infectious Disease, Medical Anthropology",
+            "degree" : "M.D., Ph.D."
+        },
+        "doctor9" : {
+            "name" :"Dr. Kunal",
+            "speciality" : "Primatology, Ethology",
+            "degree" : "Ph.D. (Although not a medical doctor, she is a doctor in her field)"
+        },
+        "doctor10" : {
+            "name" :"Dr. Aniruddha",
+            "speciality" : "Immunology, Infectious Diseases",
+            "degree" : "Doctor of Medicine (MD)"
+        },
+        "doctor11" : {
+            "name" : "Dr. Rupali",
+            "speciality" : "Cardiac Surgery",
+            "degree" : "Doctor of Medicine (MD), PhD in Cardiothoracic Surgery"
+        },
+        "doctor12" : {
+            "name" : "Dr. Kunal Sarkar",
+            "speciality" : "Immunology",
+            "degree" : "MD (Pioneer of the smallpox vaccine)"
+        }
+
+    }
+
+    return render(request ,"find_doctor.html"  , doctors)
+
 def blood_bank(request):
     return render(request ,"blood_bank.html")
 def ICU(request):

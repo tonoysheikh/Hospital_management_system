@@ -12,7 +12,7 @@ urlpatterns = [
     path('nephrologycenter/' , views.nephrologycenter),
     path('anesthesia/' , views.anesthesia),
     path('urology/' , views.urology),
-    path('Psychologis/' , views.Psychologist),
+    path('Psychologist/' , views.Psychologist),
     path('ophthalmology/' , views.ophthalmology),
     path('nephrology/' , views.nephrology),
     path('find_doctor/' , views.find_doctor),

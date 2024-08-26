@@ -6,7 +6,7 @@
       <div
         class="page-title dark-background"
         data-aos="fade"
-        style="background-image: url(assets/img/media.jpg)"
+        style="background-image: url(/static/assets/img/media.jpg)"
       >
         <div class="container position-relative">
           <h1>Media Gallery</h1>
@@ -64,11 +64,11 @@
           </div>
           <div class="item doctors col-lg-3 col-md-4 col-6 col-sm">
             <a
-              href="./assets/img/gallery/d1.jpg"
+              href="/static/assets/img/gallery/d1.jpg"
               class="fancylight popup-btn"
               data-fancybox-group="light"
             >
-              <img class="img-fluid" src="./assets/img/gallery/d1.jpg" alt="" />
+              <img class="img-fluid" src="/static/assets/img/gallery/d1.jpg" alt="" />
             </a>
           </div>
           <div class="item staff col-lg-3 col-md-4 col-6 col-sm">
@@ -245,4 +245,8 @@
         </div>
       </section>
     </main>
+{% endblock %}
+
+{% block title %}
+Media - LANS unity exchange hospital
 {% endblock %}
