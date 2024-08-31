@@ -36,11 +36,11 @@ def find_doctor(request):
         "doctor1" : {
             "name" : "Tanni",
             "speciality" : "Consultant, Dermatology",
-            "degree" : "MBBS, DDV (SINGAPORE), MSc In Clinical Dermatology (London), MSSVD (London)"
+            "degree" : "MBBS, DDV (SINGAPORE)"
         },
         "doctor2" : {
             "name" : "Dr. Rahul",
-            "speciality" : "Medical Anthropology, Public Health",
+            "speciality" : "Medical Anthropology",
             "degree" : "MD (Doctor of Medicine), PhD (Doctor of Philosophy)"
         },
         "doctor3" : {
@@ -55,7 +55,7 @@ def find_doctor(request):
         },
         "doctor5" : {
             "name" : "Dr. Halima",
-            "speciality" : "Immunology, Infectious Diseases",
+            "speciality" : "Infectious Diseases",
             "degree" : "MD (Doctor of Medicine)"
         },
         "doctor6" : {
@@ -70,17 +70,17 @@ def find_doctor(request):
         },
         "doctor8" : {
             "name" :"Dr.Susmita",
-            "speciality" : "Infectious Disease, Medical Anthropology",
+            "speciality" : "Medical Anthropology",
             "degree" : "M.D., Ph.D."
         },
         "doctor9" : {
             "name" :"Dr. Kunal",
-            "speciality" : "Primatology, Ethology",
+            "speciality" : "Ethology",
             "degree" : "Ph.D. (Although not a medical doctor, she is a doctor in her field)"
         },
         "doctor10" : {
             "name" :"Dr. Aniruddha",
-            "speciality" : "Immunology, Infectious Diseases",
+            "speciality" : "Infectious Diseases",
             "degree" : "Doctor of Medicine (MD)"
         },
         "doctor11" : {
@@ -98,6 +98,8 @@ def find_doctor(request):
 
     return render(request ,"find_doctor.html"  , doctors)
 
+def profile(request):
+    return render(request ,"doctor_profile.html")
 def blood_bank(request):
     return render(request ,"blood_bank.html")
 def ICU(request):

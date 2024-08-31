@@ -2563,6 +2563,7 @@ section,
   text-transform: capitalize;
   text-wrap: nowrap;
   text-overflow: ellipsis;
+  text-align: center;
 }
 
 .size {
@@ -2742,6 +2743,24 @@ section,
 #subject{
   height: 48px;
   padding: 10px 15px;
+}
+
+.masthead-heading{
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.masthead-subheading{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 480px) {

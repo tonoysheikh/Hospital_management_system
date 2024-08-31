@@ -16,6 +16,7 @@ urlpatterns = [
     path('ophthalmology/' , views.ophthalmology),
     path('nephrology/' , views.nephrology),
     path('find_doctor/' , views.find_doctor),
+    path('profile/' , views.profile),
     path('blood_bank/' , views.blood_bank),
     path('ICU/' , views.ICU),
     path('emergency_service/' , views.emergency_service),
