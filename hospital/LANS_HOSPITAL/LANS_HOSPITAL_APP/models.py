@@ -6,5 +6,8 @@ class Doctor(models.Model):
     name = models.CharField(max_length= 200)
     speciality = models.TextField()
     degree = models.TextField()
+    intro = models.TextField()
+    complete = models.TextField()
+    end = models.TextField()
     
     
