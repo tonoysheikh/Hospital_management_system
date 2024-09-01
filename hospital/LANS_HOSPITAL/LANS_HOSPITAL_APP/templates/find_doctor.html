@@ -1,613 +1,111 @@
-{% extends "lay.html" %}
-{% load static %}
-{% block content %}
+{% extends "lay.html" %} {% load static %} {% block content %}
 
-    <main class="main" >
-      <!-- Page Title -->
-      <div
-        class="page-title dark-background"
-        data-aos="fade"
-        style="
-          background-image: url(/static/assets/img/doctor_cover.jpg);
-        "
-      >
-        <div class="container position-relative">
-          <h1>Find Doctors</h1>
-          <p>
-            "Quality is never an accident. It is always the result of
-            intelligent effort."
-          </p>
-          <nav class="breadcrumbs">
-            <ol>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="current">Search Doctor</a></li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-      <!-- End Page Title -->
+<main class="main">
+  <!-- Page Title -->
+  <div
+    class="page-title dark-background"
+    data-aos="fade"
+    style="background-image: url(/static/assets/img/doctor_cover.jpg)"
+  >
+    <div class="container position-relative">
+      <h1>Find Doctors</h1>
+      <p>
+        "Quality is never an accident. It is always the result of intelligent
+        effort."
+      </p>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="current">Search Doctor</a></li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- End Page Title -->
 
-      <div class="container-doctor">
-        <input
-          id="searchbar"
-          onkeyup="search_doctor()"
-          type="text"
-          name="search"
-          placeholder="Search Doctor..."
-        />
-        <ul id="list">
-          <div class="row gy-4">
-            <div class="col-lg-4">
-              <li class="doctor">
-                <div class="col-lg-4">
-                  <div class="card">
-                    <div class="image_container-doctor">
-                      <img
-                        class="image"
-                        src="{% static './assets/img/doctors/d1.png' %}"
-                        alt=""
-                      />
-                    </div>
-                    <div class="title" style="text-align:center;">
-                      <span class="doctor">{{doctor1.name}}</span>
-                    </div>
-                    <div class="size">
-                      <div class="speciality">
-                        <h3>Speciality</h3><span style = "padding-left:5px">-</span>
-                        <p>{{doctor1.speciality}}</p>
-                      </div>
-                      <div class="degree">
-                        <h3>Degree</h3><span style = "padding-left:10px">-</span>
-                        <p>
-                          {{doctor1.degree}}
-                        </p>
-                      </div>
-                    </div>
-                    <div class="action">
-                      <div class="price">
-                        <button class="cart-button">
-                          <span>Get Appointment</span>
-                        </button>
-                      </div>
-                      <button class="cart-button">
-                        <span>Profile</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </div>
-            <div class="col-lg-4">
-              <li class="doctor">
-                <div class="col-lg-4">
-                  <div class="card">
-                    <div class="image_container-doctor">
-                      <img
-                        class="image"
-                        src="/static/assets/img/doctors/d2.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="title" style="text-align:center;">
-                      <span class="doctor">{{doctor2.name}}</span>
-                    </div>
-                    <div class="size">
-                      <div class="size">
-                        <div class="speciality">
-                          <h3>Speciality</h3><span style = "padding-left:5px">-</span>
-                          <p>{{doctor2.speciality}}</p>
-                        </div>
-                        <div class="degree">
-                          <h3>Degree</h3><span style = "padding-left:10px">-</span>
-                          <p>
-                           {{doctor2.degree}}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="action">
-                      <div class="price">
-                        <button class="cart-button">
-                          <span>Get Appointment</span>
-                        </button>
-                      </div>
-                      <button class="cart-button">
-                        <span>Profile</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </div>
-            <div class="col-lg-4">
-              <li class="doctor">
-                <div class="col-lg-4">
-                  <!-- <article class="position-relative h-100"> -->
-                  <div class="card">
-                    <div class="image_container-doctor">
-                      <img
-                        class="image"
-                        src="/static/assets/img/doctors/d3.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="title" style="text-align:center;">
-                      <span class="doctor">{{doctor3.name}}</span>
-                    </div>
-                    <div class="size">
-                      <div class="speciality">
-                        <h3>Speciality</h3><span style = "padding-left:5px">-</span>
-                        <p>{{doctor3.speciality}}</p>
-                      </div>
-                      <div class="degree">
-                        <h3>Degree</h3><span style = "padding-left:10px">-</span>
-                        <p>
-                          {{doctor3.degree}}
-                        </p>
-                      </div>
-                    </div>
-                    <div class="action">
-                      <div class="price">
-                        <button class="cart-button">
-                          <span>Get Appointment</span>
-                        </button>
-                      </div>
-                      <button class="cart-button">
-                        <span>Profile</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </div>
-            <div class="col-lg-4">
-              <li class="doctor">
-                <div class="col-lg-4">
-                  <!-- <article class="position-relative h-100"> -->
-                  <div class="card">
-                    <div class="image_container-doctor">
-                      <img
-                        class="image"
-                        src="/static/assets/img/doctors/d4.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="title" style="text-align:center;">
-                      <span class="doctor">{{doctor4.name}}</span>
-                    </div>
-                    <div class="size">
-                      <div class="speciality">
-                        <h3>Speciality</h3><span style = "padding-left:5px">-</span>
-                        <p>{{doctor4.speciality}}</p>
-                      </div>
-                      <div class="degree">
-                        <h3>Degree</h3><span style = "padding-left:10px">-</span>
-                        <p>
-                          {{doctor4.degree}}
-                        </p>
-                      </div>
-                    </div>
-                    <div class="action">
-                      <div class="price">
-                        <button class="cart-button">
-                          <span>Get Appointment</span>
-                        </button>
-                      </div>
-                      <button class="cart-button">
-                        <span>Profile</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </div>
+  <div class="container-doctor">
+    <input
+      id="searchbar"
+      onkeyup="search_doctor()"
+      type="text"
+      name="search"
+      placeholder="Search Doctor..."
+    />
 
-            <div class="col-lg-4">
-              <li class="doctor">
-                <div class="col-lg-4">
-                  <!-- <article class="position-relative h-100"> -->
-                  <div class="card">
-                    <div class="image_container-doctor">
-                      <img
-                        class="image"
-                        src="/static/assets/img/doctors/d5.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="title" style="text-align:center;">
-                      <span class="doctor">{{doctor5.name}}</span>
-                    </div>
-                    <div class="size">
-                      <div class="speciality">
-                        <h3>Speciality</h3><span style = "padding-left:5px">-</span>
-                        <p>
-                          {{doctor5.speciality}}
-                        </p>
-                      </div>
-                      <div class="degree">
-                        <h3>Degree</h3><span style = "padding-left:10px">-</span>
-                        <p>
-                          {{doctor5.degree}}
-                        </p>
-                      </div>
-                    </div>
-                    <div class="action">
-                      <div class="price">
-                        <button class="cart-button">
-                          <span>Get Appointment</span>
-                        </button>
-                      </div>
-                      <button class="cart-button">
-                        <span>Profile</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
+    <div class="container row gy-4 mt-3">
+      {% for item in doctor %}
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="image_container-doctor">
+              <img
+                class="image"
+                src="{% static './assets/img/doctors/d1.png' %}"
+                alt=""
+              />
             </div>
-
-            <div class="col-lg-4">
-              <li class="doctor">
-                <div class="col-lg-4">
-                  <!-- <article class="position-relative h-100"> -->
-                  <div class="card">
-                    <div class="image_container-doctor">
-                      <img
-                        class="image"
-                        src="/static/assets/img/doctors/d6.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="title" style="text-align:center;">
-                      <span class="doctor">
-                        {{doctor6.name}}
-                      </span>
-                    </div>
-                    <div class="size">
-                      <div class="speciality">
-                        <h3>Speciality</h3><span style = "padding-left:5px">-</span>
-                        <p>
-                          {{doctor6.speciality}}
-                        </p>
-                      </div>
-                      <div class="degree">
-                        <h3>Degree</h3><span style = "padding-left:10px">-</span>
-                        <p>
-                          {{doctor6.degree}}
-                        </p>
-                      </div>
-                    </div>
-                    <div class="action">
-                      <div class="price">
-                        <button class="cart-button">
-                          <span>Get Appointment</span>
-                        </button>
-                      </div>
-                      <button class="cart-button">
-                        <span>Profile</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
+            <div class="title" style="text-align: center">
+              <span class="doctor">{{ item.name }}</span>
             </div>
-
-            <div class="col-lg-4">
-              <li class="doctor">
-                <div class="col-lg-4">
-                  <!-- <article class="position-relative h-100"> -->
-                  <div class="card">
-                    <div class="image_container-doctor">
-                      <img
-                        class="image"
-                        src="/static/assets/img/doctors/d7.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="title" style="text-align:center;">
-                      <span class="doctor">
-                        {{doctor7.name}}
-                      </span>
-                    </div>
-                    <div class="size">
-                      <div class="speciality">
-                        <h3>Speciality</h3><span style = "padding-left:5px">-</span>
-                        <p>
-                          {{doctor7.speciality}}
-                        </p>
-                      </div>
-                      <div class="degree">
-                        <h3>Degree</h3><span style = "padding-left:10px">-</span>
-                        <p>
-                          {{doctor7.degree}}
-                        </p>
-                      </div>
-                    </div>
-                    <div class="action">
-                      <div class="price">
-                        <button class="cart-button">
-                          <span>Get Appointment</span>
-                        </button>
-                      </div>
-                      <button class="cart-button">
-                        <span>Profile</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </div>
-
-            <div class="col-lg-4">
-              <li class="doctor">
-                <div class="col-lg-4">
-                  <!-- <article class="position-relative h-100"> -->
-                  <div class="card">
-                    <div class="image_container-doctor">
-                      <img
-                        class="image"
-                        src="/static/assets/img/doctors/d8.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="title" style="text-align:center;">
-                      <span class="doctor">
-                        {{doctor8.name}}
-                         </span>
-                    </div>
-                    <div class="size">
-                      <div class="speciality">
-                        <h3>Speciality</h3><span style = "padding-left:5px">-</span>
-                        <p>
-                          {{doctor8.speciality}}
-                        </p>
-                      </div>
-                      <div class="degree">
-                        <h3>Degree</h3><span style = "padding-left:10px">-</span>
-                        <p>
-                          {{doctor8.degree}}
-                        </p>
-                      </div>
-                    </div>
-                    <div class="action">
-                      <div class="price">
-                        
-                        <button class="cart-button">
-                          <span>Get Appointment</span>
-                        </button>
-                      </div>
-                      <button class="cart-button">
-                        <span>Profile</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </div>
-
-            <div class="col-lg-4">
-              <li class="doctor">
-                <div class="col-lg-4">
-                  <!-- <article class="position-relative h-100"> -->
-                  <div class="card">
-                    <div class="image_container-doctor">
-                      <img
-                        class="image"
-                        src="/static/assets/img/doctors/d9.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="title" style="text-align:center;">
-                      <span class="doctor">
-                        {{doctor9.name}}
-                      </span>
-                    </div>
-                    <div class="size">
-                      <div class="speciality">
-                        <h3>Speciality</h3><span style = "padding-left:5px">-</span>
-                        <p>
-                          {{doctor9.speciality}}
-                        </p>
-                      </div>
-                      <div class="degree">
-                        <h3>Degree</h3><span style = "padding-left:10px">-</span>
-                        <p>
-                          {{doctor9.degree}}
-                        </p>
-                      </div>
-                    </div>
-                    <div class="action">
-                      <div class="price">
-                        <button class="cart-button">
-                          <span>Get Appointment</span>
-                        </button>
-                      </div>
-                      <button class="cart-button">
-                        <span>Profile</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </div>
-
-            <div class="col-lg-4">
-              <li class="doctor">
-                <div class="col-lg-4">
-                  <!-- <article class="position-relative h-100"> -->
-                  <div class="card">
-                    <div class="image_container-doctor">
-                      <img
-                        class="image"
-                        src="/static/assets/img/doctors/d10.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="title" style="text-align:center;">
-                      <span class="doctor">
-                        {{doctor10.name}}
-                      </span>
-                    </div>
-                    <div class="size">
-                      <div class="speciality">
-                        <h3>Speciality</h3><span style = "padding-left:5px">-</span>
-                        <p>
-                          {{doctor10.speciality}}
-                        </p>
-                      </div>
-                      <div class="degree">
-                        <h3>Degree</h3><span style = "padding-left:10px">-</span>
-                        <p>
-                          {{doctor10.degree}}
-                        </p>
-                      </div>
-                    </div>
-                    <div class="action">
-                      <div class="price">
-                        <button class="cart-button">
-                          <span>Get Appointment</span>
-                        </button>
-                      </div>
-                      <button class="cart-button">
-                        <span>Profile</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </div>
-
-            <div class="col-lg-4">
-              <li class="doctor">
-                <div class="col-lg-4">
-                  <!-- <article class="position-relative h-100"> -->
-                  <div class="card">
-                    <div class="image_container-doctor">
-                      <img
-                        class="image"
-                        src="/static/assets/img/doctors/d11.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="title" style="text-align:center;">
-                      <span class="doctor">
-                        {{doctor11.name}}
-                      </span>
-                    </div>
-                    <div class="size">
-                      <div class="speciality">
-                        <h3>Speciality</h3><span style = "padding-left:5px">-</span>
-                        <p>
-                          {{doctor11.speciality}}
-                        </p>
-                      </div>
-                      <div class="degree">
-                        <h3>Degree</h3><span style = "padding-left:10px">-</span>
-                        <p>
-                          {{doctor11.degree}}
-                        </p>
-                      </div>
-                    </div>
-                    <div class="action">
-                      <div class="price">
-                        <!-- <span>$299</span> -->
-                        <button class="cart-button">
-                          <span>Get Appointment</span>
-                        </button>
-                      </div>
-                      <button class="cart-button">
-                        <span>Profile</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </div>
-
-            <div class="col-lg-4">
-              <li class="doctor">
-                <div class="col-lg-4">
-                  <!-- <article class="position-relative h-100"> -->
-                  <div class="card">
-                    <div class="image_container-doctor">
-                      <img
-                        class="image"
-                        src="/static/assets/img/doctors/d12.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="title" style="text-align:center;">
-                      <span class="doctor">
-                        {{doctor12.name}}
-                      </span>
-                    </div>
-                    <div class="size">
-                      <div class="speciality">
-                        <h3>Speciality</h3><span style = "padding-left:5px">-</span>
-                        <p>
-                          {{doctor12.speciality}}
-                        </p>
-                      </div>
-                      <div class="degree">
-                        <h3>Degree</h3><span style = "padding-left:10px">-</span>
-                        <p>
-                          {{doctor12.degree}}
-                        </p>
-                      </div>
-                    </div>
-                    <div class="action">
-                      <div class="price">
-                        <!-- <span>$299</span> -->
-                        <button class="cart-button">
-                          <span>Get Appointment</span>
-                        </button>
-                      </div>
-                      <button class="cart-button">
-                        <span>Profile</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </div>
-          </div>
-        </ul>
-      </div>
-
-      <!-- Call To Action Section -->
-      <section
-        id="call-to-action"
-        class="call-to-action section light-background"
-      >
-        <div class="content">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6">
-                <div data-aos="fade-right">
-                  <h3>Book an Appointment</h3>
-                  <p class="opacity-50">
-                    Contact on our care line number to book an appointment.
-                  </p>
-                </div>
+            <div class="size">
+              <div class="speciality">
+                <h3>Speciality</h3>
+                <span style="padding-left: 5px">-</span>
+                <p>{{ item.speciality }}</p>
               </div>
-              <div class="col-lg-6">
-                <div data-aos="fade-left">
-                  <h1 style="text-align: center" class="careline">
-                    <a style="padding-right: 15px" href="#"
-                      ><i class="bi bi-telephone-fill"></i></a
-                    >Care Line : +880 13030 15394
-                  </h1>
-                </div>
+              <div class="degree">
+                <h3>Degree</h3>
+                <span style="padding-left: 10px">-</span>
+                <p>{{ item.degree }}</p>
               </div>
+            </div>
+            <div class="action">
+              <div class="price">
+                <button class="cart-button">
+                  <span><a href="{% url 'profile' item.id %}">Get Appointment</a></span>
+                </button>
+              </div>
+              <button class="cart-button">
+                <span><a href="{% url 'profile' item.id %}">Profile</a></span>
+              </button>
             </div>
           </div>
         </div>
-      </section>
-      <!-- /Call To Action Section -->
-    </main>
+      {% endfor %}
+    </div>
+    
+  </div>
+
+  <!-- Call To Action Section -->
+  <section id="call-to-action" class="call-to-action section light-background">
+    <div class="content">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div data-aos="fade-right">
+              <h3>Book an Appointment</h3>
+              <p class="opacity-50">
+                Contact on our care line number to book an appointment.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div data-aos="fade-left">
+              <h1 style="text-align: center" class="careline">
+                <a style="padding-right: 15px" href="#"
+                  ><i class="bi bi-telephone-fill"></i></a
+                >Care Line : +880 13030 15394
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Call To Action Section -->
+</main>
 
 {% endblock %}
 
-{% block title %}
-Find Doctors - LANS unity exchange hospital
-{% endblock %}
+
+ {% block title %} Find Doctors - LANS unity exchange hospital
+ {% endblock %}

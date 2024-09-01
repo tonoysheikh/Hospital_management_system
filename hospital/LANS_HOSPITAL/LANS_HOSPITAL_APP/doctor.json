@@ -1,0 +1,110 @@
+[
+    {
+        "model": "LANS_HOSPITAL_APP.doctor",
+        "pk": 1,
+        "fields": {
+            "name": "Tanni",
+            "speciality": "Consultant, Dermatology",
+            "degree": "MBBS, DDV (SINGAPORE)"
+        }
+    },
+    {
+        "model": "LANS_HOSPITAL_APP.doctor",
+        "pk": 2,
+        "fields": {
+            "name": "Dr. Rahul",
+            "speciality": "Medical Anthropology",
+            "degree": "MD (Doctor of Medicine), PhD (Doctor of Philosophy)"
+        }
+    },
+    {
+        "model": "LANS_HOSPITAL_APP.doctor",
+        "pk": 3,
+        "fields": {
+            "name": "Dr. Nadiya",
+            "speciality": "Neurosurgery",
+            "degree": "MD (Doctor of Medicine), MPH (Master of Public Health)"
+        }
+    },
+    {
+        "model": "LANS_HOSPITAL_APP.doctor",
+        "pk": 4,
+        "fields": {
+            "name": "Dr. Limon",
+            "speciality": "Virology",
+            "degree": "MD (Developer of the polio vaccine)"
+        }
+    },
+    {
+        "model": "LANS_HOSPITAL_APP.doctor",
+        "pk": 5,
+        "fields": {
+            "name" : "Dr. Halima",
+            "speciality" : "Infectious Diseases",
+            "degree" : "MD (Doctor of Medicine)"
+        }
+    },
+    {
+        "model": "LANS_HOSPITAL_APP.doctor",
+        "pk": 6,
+        "fields": {
+            "name" : "Dr. Kunal Sarkar",
+            "speciality" : "Immunology",
+            "degree" : "MD (Pioneer of the smallpox vaccine)"
+        }
+    },
+    {
+        "model": "LANS_HOSPITAL_APP.doctor",
+        "pk": 7,
+        "fields": {
+            "name" : "Dr. Rupali",
+            "speciality" : "Cardiac Surgery",
+            "degree" : "Doctor of Medicine (MD), PhD in Cardiothoracic Surgery"
+        }
+    },
+    {
+        "model": "LANS_HOSPITAL_APP.doctor",
+        "pk": 8,
+        "fields": {
+            "name" :"Dr. Aniruddha",
+            "speciality" : "Infectious Diseases",
+            "degree" : "Doctor of Medicine (MD)"
+        }
+    },
+    {
+        "model": "LANS_HOSPITAL_APP.doctor",
+        "pk": 9,
+        "fields": {
+            "name" :"Dr. Kunal",
+            "speciality" : "Ethology",
+            "degree" : "Ph.D. (Although not a medical doctor, she is a doctor in her field)"
+        }
+    },
+    {
+        "model": "LANS_HOSPITAL_APP.doctor",
+        "pk": 10,
+        "fields": {
+            "name" :"Dr.Susmita",
+            "speciality" : "Medical Anthropology",
+            "degree" : "M.D., Ph.D."
+        }
+    },
+    {
+        "model": "LANS_HOSPITAL_APP.doctor",
+        "pk": 11,
+        "fields": {
+            "name" :"Dr. Bidhan",
+            "speciality" : "Pediatric Neurosurgery",
+            "degree" : "MD (Doctor of Medicine)"
+        }
+    },
+    {
+        "model": "LANS_HOSPITAL_APP.doctor",
+        "pk": 12,
+        "fields": {
+            "name" : "Dr. Krisna",
+            "speciality" : "Pulmonology",
+            "degree" : " MD (Inventor of the stethoscope)"
+        }
+    }
+]

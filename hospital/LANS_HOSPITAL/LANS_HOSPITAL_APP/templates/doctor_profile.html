@@ -1,13 +1,13 @@
 {% extends "lay.html" %}
+{% load static %}
 {% block content %}
-
 <main>
     <header class="masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image-->
             <img style="width :300px;height:300px;" class="masthead-avatar mb-5 mt-5" src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/457107649_1028997642090648_8682449859101462246_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGmSLBzN7Qcm116MSgzoS1oZU4-Y_NukbRlTj5j826RtMfqqzxwAeotDRoKjfCy7n7MvsSrQrN-I6SeLfOpD0Bu&_nc_ohc=VrGRdrz0KcMQ7kNvgGLnBrg&_nc_ht=scontent.fdac14-1.fna&oh=00_AYBsGr5WOMxxO0w7Ta2HjB99Jb9HbKyVx6vGbR9mrYmw6Q&oe=66D525B3" alt="..." />
             <!-- Masthead Heading-->
-            <h1 class="masthead-heading text-uppercase">I'm Tanni</h1>
+            <h1 class="masthead-heading text-uppercase">I'm {{doctor.name}} </h1>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
@@ -15,9 +15,9 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-2">Specialist - Anesthesiologists</p>
+            <p class="masthead-subheading font-weight-light mb-2">Specialist - {{doctor.speciality}} </p>
             <!-- <p class="masthead-subheading font-weight-light mb-0"><button>Get</button></p> -->
-             <button class = "mb-2">Get Appointment</button>
+            <button type="button" class="btn btn-success mb-4">Get Appointment</button>
         </div>
     </header>
     <!-- Portfolio Section-->
@@ -135,7 +135,8 @@
     <section class="page-section" id="contact">
         <div class="container">
             <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
+                Get Appointment</h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
@@ -179,13 +180,9 @@
                                 <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                             </div>
                         </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
                         <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                         <!-- Submit Button-->
-                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button>
                     </form>
                 </div>
             </div>
