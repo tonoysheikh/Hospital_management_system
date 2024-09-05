@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Doctor
+from .models import Room
 
 # Create your views here.
 def say_hello(request):
@@ -32,9 +33,25 @@ def ophthalmology(request):
     return render(request ,"ophthalmology.html")
 def nephrology(request):
     return render(request ,"nephrology.html")
+
 def find_doctor(request):
-    doctor = Doctor.objects.all()
-    return render(request ,"find_doctor.html"  , {"doctor":doctor})
+    search_term = request.GET.get("search", "").strip()
+    
+    if search_term:
+        # Filter doctors based on the search term
+        search_todo = Doctor.objects.filter(name__icontains=search_term)
+    else:
+        # Return all doctors if no search term is provided
+        search_todo = Doctor.objects.all()
+    
+    context = {
+        "search_todo": search_todo,
+    }
+    
+    return render(request, "find_doctor.html", context)
+
+
+
 
 def profile(request , pk):
     doctor = Doctor.objects.get(pk=pk)
@@ -51,11 +68,10 @@ def feedback(request):
     return render(request ,"feedback.html")
 def equipment(request):
     return render(request ,"equipment.html")
-def room(request):
-    return render(request ,"room.html")
 def about(request):
     return render(request ,"about.html")
 def room(request):
-    return render(request ,"room.html")
+    rooms = Room.objects.all()
+    return render(request ,"room.html" , {"rooms": rooms})
 def contact(request):
     return render(request ,"contact.html")

@@ -1,5 +1,5 @@
 {% extends "lay.html"%}
-
+{% load static %}
 {% block content %}
     <main class="main">
       <!-- Page Title -->
@@ -37,9 +37,7 @@
             <h2 class="text-center" style="font-weight: 900">Room View</h2>
           </div>
 
-          <div class="row" data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500">
+          <div class="row" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             <div class="container">
               <div class="row">
                 <div class="col-md-12"><h3>Room Rate</h3></div>
@@ -52,106 +50,43 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>Ward&nbsp;</td>
-                        <td class="text-right">4,500</td>
-                      </tr>
-                      <tr>
-                        <td>Twin Bed (per bed)</td>
-                        <td class="text-right">6,500</td>
-                      </tr>
-                      <tr>
-                        <td>Single Standard</td>
-                        <td class="text-right">10,000</td>
-                      </tr>
-                      <tr>
-                        <td>Single Deluxe</td>
-                        <td class="text-right">12,500</td>
-                      </tr>
-                      <tr>
-                        <td>Suite Room</td>
-                        <td class="text-right">40,000</td>
-                      </tr>
-                      <tr>
-                        <td>ICU</td>
-                        <td class="text-right">14,500</td>
-                      </tr>
-                      <tr>
-                        <td>CCU</td>
-                        <td class="text-right">14,500</td>
-                      </tr>
-                      <tr>
-                        <td>CT-ICU</td>
-                        <td class="text-right">14,500</td>
-                      </tr>
-                      <tr>
-                        <td>Neuro ICU</td>
-                        <td class="text-right">14,500</td>
-                      </tr>
-                      <tr>
-                        <td>HDU</td>
-                        <td class="text-right">9,500</td>
-                      </tr>
-                      <tr>
-                        <td>NICU</td>
-                        <td class="text-right">12,000</td>
-                      </tr>
-                      <tr>
-                        <td>PICU</td>
-                        <td class="text-right">12,000</td>
-                      </tr>
-                      <tr>
-                        <td>Phototherapy Bed</td>
-                        <td class="text-right">4,500</td>
-                      </tr>
+                      {% for item in rooms %}
+                        <tr>
+                          <td>{{item.room_type}}</td>
+                          <td class="text-right">{{item.charge}}</td>
+                        </tr>
+                      {% endfor %}
+                    
                     </tbody>
                   </table>
                   <p><br /></p>
                 </div>
-                <br />
+          
                 <div class="col-md-8">
                   <div class="row">
                     <div class="col-sm-4">
                       <div data-aos="zoom-in">
-                        <img
-                        src="https://www.squarehospital.com/storage/images/1623908307.png"
-                        class="img-responsive fr-fil fr-dib"
-                        width="220px"
-                      />
+                        <img src="https://www.squarehospital.com/storage/images/1623908307.png" class="img-responsive fr-fil fr-dib" width="220px" />
                       </div>
-                      
                       <h5 class="text-center">Deluxe</h5>
                     </div>
                     <div class="col-sm-4" data-aos="zoom-in">
-                      <img
-                        src="https://www.squarehospital.com/storage/images/1623908295.png"
-                        class="img-responsive fr-fil fr-dib"
-                        width="220px"
-                      />
+                      <img src="https://www.squarehospital.com/storage/images/1623908295.png" class="img-responsive fr-fil fr-dib" width="220px" />
                       <h5 class="text-center">Single Standard</h5>
                     </div>
                     <div class="col-sm-4" data-aos="zoom-in">
-                      <img
-                        src="https://www.squarehospital.com/storage/images/1623908284.png"
-                        class="img-responsive fr-fil fr-dib"
-                      />
+                      <img src="https://www.squarehospital.com/storage/images/1623908284.png" class="img-responsive fr-fil fr-dib" />
                       <h5 class="text-center">Suite</h5>
                     </div>
                   </div>
                   <br /><br />
                   <div class="row">
                     <div class="col-sm-4" data-aos="zoom-in">
-                      <img
-                        src="https://www.squarehospital.com/storage/images/1623908273.png"
-                        class="img-responsive fr-fil fr-dib"
-                      />
+                      <img src="https://www.squarehospital.com/storage/images/1623908273.png" class="img-responsive fr-fil fr-dib" />
                       <h5 class="text-center">Twin</h5>
                     </div>
                     <div class="col-sm-4" data-aos="zoom-in">
-                      <img
-                        src="https://www.squarehospital.com/storage/images/1623908248.png"
-                        class="img-responsive fr-fil fr-dib"
-                      />
+                      <img src="https://www.squarehospital.com/storage/images/1623908248.png" class="img-responsive fr-fil fr-dib" />
                       <h5 class="text-center">Ward</h5>
                     </div>
                   </div>
@@ -159,6 +94,7 @@
               </div>
             </div>
           </div>
+          
           
         </div>
       </section>

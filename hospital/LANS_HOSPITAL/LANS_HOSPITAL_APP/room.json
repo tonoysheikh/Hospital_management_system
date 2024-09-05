@@ -1,0 +1,106 @@
+[
+  {
+    "model": "LANS_HOSPITAL_APP.room",
+    "pk": 1,
+    "fields": {
+      "room_type": "Ward",
+      "charge": "4500.00"
+    }
+  },
+  {
+    "model": "LANS_HOSPITAL_APP.room",
+    "pk": 2,
+    "fields": {
+      "room_type": "Twin Bed (per bed)",
+      "charge": "6500.00"
+    }
+  },
+  {
+    "model": "LANS_HOSPITAL_APP.room",
+    "pk": 3,
+    "fields": {
+      "room_type": "Single Standard",
+      "charge": "10000.00"
+    }
+  },
+  {
+    "model": "LANS_HOSPITAL_APP.room",
+    "pk": 4,
+    "fields": {
+      "room_type": "Single Deluxe",
+      "charge": "12500.00"
+    }
+  },
+  {
+    "model": "LANS_HOSPITAL_APP.room",
+    "pk": 5,
+    "fields": {
+      "room_type": "Suite Room",
+      "charge": "40000.00"
+    }
+  },
+  {
+    "model": "LANS_HOSPITAL_APP.room",
+    "pk": 6,
+    "fields": {
+      "room_type": "ICU",
+      "charge": "14500.00"
+    }
+  },
+  {
+    "model": "LANS_HOSPITAL_APP.room",
+    "pk": 7,
+    "fields": {
+      "room_type": "CCU",
+      "charge": "14500.00"
+    }
+  },
+  {
+    "model": "LANS_HOSPITAL_APP.room",
+    "pk": 8,
+    "fields": {
+      "room_type": "CT-ICU",
+      "charge": "14500.00"
+    }
+  },
+  {
+    "model": "LANS_HOSPITAL_APP.room",
+    "pk": 9,
+    "fields": {
+      "room_type": "Neuro ICU",
+      "charge": "14500.00"
+    }
+  },
+  {
+    "model": "LANS_HOSPITAL_APP.room",
+    "pk": 10,
+    "fields": {
+      "room_type": "HDU",
+      "charge": "9500.00"
+    }
+  },
+  {
+    "model": "LANS_HOSPITAL_APP.room",
+    "pk": 11,
+    "fields": {
+      "room_type": "NICU",
+      "charge": "12000.00"
+    }
+  },
+  {
+    "model": "LANS_HOSPITAL_APP.room",
+    "pk": 12,
+    "fields": {
+      "room_type": "PICU",
+      "charge": "12000.00"
+    }
+  },
+  {
+    "model": "LANS_HOSPITAL_APP.room",
+    "pk": 13,
+    "fields": {
+      "room_type": "Phototherapy Bed",
+      "charge": "4500.00"
+    }
+  }
+]

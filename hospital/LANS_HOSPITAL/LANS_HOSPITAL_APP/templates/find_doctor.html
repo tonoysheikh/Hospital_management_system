@@ -1,4 +1,6 @@
-{% extends "lay.html" %} {% load static %} {% block content %}
+{% extends "lay.html" %}
+{% load static %}
+{% block content %}
 
 <main class="main">
   <!-- Page Title -->
@@ -24,56 +26,64 @@
   <!-- End Page Title -->
 
   <div class="container-doctor">
-    <input
-      id="searchbar"
-      onkeyup="search_doctor()"
-      type="text"
-      name="search"
-      placeholder="Search Doctor..."
-    />
+    <form method="GET">
+        <input
+            id="searchbar"
+            type="text"
+            name="search"
+            placeholder="Search Doctor..."
+            value="{{ request.GET.search }}" 
+        />
+        <button class="btn-primary">Search</button>
+    </form>
 
-    <div class="container row gy-4 mt-3">
-      {% for item in doctor %}
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="image_container-doctor">
-              <img
-                class="image"
-                src="{% static './assets/img/doctors/d1.png' %}"
-                alt=""
-              />
-            </div>
-            <div class="title" style="text-align: center">
-              <span class="doctor">{{ item.name }}</span>
-            </div>
-            <div class="size">
-              <div class="speciality">
-                <h3>Speciality</h3>
-                <span style="padding-left: 5px">-</span>
-                <p>{{ item.speciality }}</p>
-              </div>
-              <div class="degree">
-                <h3>Degree</h3>
-                <span style="padding-left: 10px">-</span>
-                <p>{{ item.degree }}</p>
-              </div>
-            </div>
-            <div class="action">
-              <div class="price">
-                <button class="cart-button">
-                  <span><a href="{% url 'profile' item.id %}">Get Appointment</a></span>
-                </button>
-              </div>
-              <button class="cart-button">
-                <span><a href="{% url 'profile' item.id %}">Profile</a></span>
-              </button>
-            </div>
-          </div>
+    {% if search_todo %}
+        <div class="container row gy-4 mt-3">
+            {% for item in search_todo %}
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="image_container-doctor">
+                            <img
+                                class="image"
+                                src="{% static './assets/img/doctors/d1.png' %}"
+                                alt=""
+                            />
+                        </div>
+                        <div class="title" style="text-align: center">
+                            <span class="doctor">{{ item.name }}</span>
+                        </div>
+                        <div class="size">
+                            <div class="speciality">
+                                <h3>Speciality</h3>
+                                <span style="padding-left: 5px">-</span>
+                                <p>{{ item.speciality }}</p>
+                            </div>
+                            <div class="degree">
+                                <h3>Degree</h3>
+                                <span style="padding-left: 10px">-</span>
+                                <p>{{ item.degree }}</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <div class="price">
+                                <button class="cart-button">
+                                    <span><a href="{% url 'profile' item.id %}">Get Appointment</a></span>
+                                </button>
+                            </div>
+                            <button class="cart-button">
+                                <span><a href="{% url 'profile' item.id %}">Profile</a></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
-      {% endfor %}
-    </div>
-    
-  </div>
+    {% else %}
+        <p>No doctors found.</p>
+    {% endif %}
+</div>
+
+
 
   <!-- Call To Action Section -->
   <section id="call-to-action" class="call-to-action section light-background">
