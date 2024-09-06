@@ -9,6 +9,7 @@ class Doctor(models.Model):
     intro = models.TextField()
     complete = models.TextField()
     end = models.TextField()
+    
 
 class Room(models.Model):
     room_type = models.CharField(max_length=100)
