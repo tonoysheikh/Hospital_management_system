@@ -19,6 +19,11 @@ class Doctor(models.Model):
     intro = models.TextField()
     complete = models.TextField()
     end = models.TextField()
+    appointment = models.TextField(null= True , blank=True)
+    time = models.TextField(null= True , blank=True)
+    fee = models.DecimalField(max_digits=10 , decimal_places= 2 , null= True , blank=True)
+    image = models.ImageField(upload_to = "image/" , null= True , blank=True)
+    
     def __str__(self):
         return self.name
     
@@ -47,4 +52,14 @@ class Contact(models.Model):
     
     def __str__(self):
         return self.name
+ 
+class Appointment(models.Model):
+    doctor_name = models.CharField(max_length= 100 , null = True)
+    name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=100)
+    date = models.CharField(max_length=100)
+    time = models.CharField(max_length=100)
+    message = models.TextField()
     
+    def __str__(self):
+        return self.doctor_name    

@@ -2787,6 +2787,16 @@ section,
   color: #fff;
 }
 
+.css-border {
+  border: 4px solid #cddc39;
+  padding: 2px;
+  border-radius: 50%;
+  border-top-color: #ff5722;
+  border-left-color: #ff5722;
+  width: 75px;
+  height: 75px;
+}
+
 @media only screen and (max-width: 480px) {
   .blood-content {
     margin-left: 40px;

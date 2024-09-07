@@ -2,12 +2,15 @@
 {% load static %}
 {% block content %}
 <main>
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-primary text-white text-center" style = "background-color: #39393e">
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image-->
-            <img style="width :300px;height:250px; border-radius:50%;" class="masthead-avatar mb-5 mt-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqGK3diR3Zi-mnOXEaj-3ewmFyRYVxGzVzZw&s" alt="..." />
+            <h1 class="masthead-heading text-uppercase mt-3 " style = "text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;" data-aos="fade-down">Thanks for choosing me!</h1>
+            <img style="width :300px;height:200px; border-radius:20%;border: 4px solid #cddc39;padding: 2px;border-top-color: #ff5722;border-left-color: #ff5722; background: #39393e;
+
+ " class="masthead-avatar mb-3 mt-3 css-border" data-aos="fade-right" src="{{doctor.image.url}}" alt="..." />
             <!-- Masthead Heading-->
-            <h1 class="masthead-heading text-uppercase">I'm {{doctor.name}} </h1>
+            <h1 class="masthead-heading text-uppercase" data-aos="fade-left">I'm {{doctor.name}} </h1>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
@@ -65,11 +68,11 @@
                 </p></div>
                 <div class="col-lg-4 me-auto"><p class="lead">
                     Appointment Time : <br>
-                    10:00 AM To 8:00 PM <br>
+                    {{ doctor.time }} <br>
                     Day : <br>
-                    Monday To Friday <br>
+                    {{ doctor.appointment }} <br>
                     Fee : <br>
-                    1000.00 BDT
+                    {{ doctor.fee }} BDT
                 </p></div>
             </div>
         </div>
@@ -89,54 +92,66 @@
             <!-- Contact Section Form-->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                            <label for="name">Patient Full name</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    <form method="post" action="">
+                        {% csrf_token %}
+                        <div class="row">
+                          <div class="col-md-6 form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="name"
+                              name="name"
+                              placeholder="Your Name"
+                              required=""
+                            />
+                          </div>
+                          <div class="col-md-6 form-group mt-3 mt-md-0">
+                            <input
+                              type="email"
+                              class="form-control"
+                              name="email"
+                              id="email"
+                              placeholder="Your Email"
+                              required=""
+                            />
+                          </div>
                         </div>
-                        <!-- Email address input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                            <label for="email">Email address</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                        </div>
-                        <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                            <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                            <label for="phone">Appointment Date</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                            <label for="phone">Appointment Time</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                        </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                            <label for="message">Patient Problem Describe</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                        </div>
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+          
+                        <div class="row mt-3">
+                            <div class="col-md-6 form-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                name="time"
+                                placeholder="Time"
+                                required=""
+                              />
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="date"
+                                id="email"
+                                placeholder="date"
+                                required=""
+                              />
                             </div>
                         </div>
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                        <!-- Submit Button-->
-                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button>
-                    </form>
+                        <div class="form-group mt-3">
+                          <textarea
+                            id="message"
+                            class="form-control"
+                            name="message"
+                            placeholder="Message"
+                            required=""
+                          ></textarea>
+                        </div>
+                        <div class="text-center">
+                          <button class="send" type="submit" onclick="sendMail()">Send Message</button>
+                        </div>
+                      </form> 
                 </div>
             </div>
         </div>

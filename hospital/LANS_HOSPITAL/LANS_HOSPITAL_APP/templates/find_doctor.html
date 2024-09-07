@@ -41,12 +41,14 @@
         <div class="container row gy-4 mt-3">
             {% for item in search_todo %}
                 <div class="col-lg-4">
-                    <div class="card" style="min-height:350px;">
+                    <div class="card">
                         <div class="image_container-doctor">
                             <img
                                 class="image"
-                                src="/static/assets/img/doctors/d2.png"
-                                alt=""
+                                {% if item.image %}
+                                  src=" {{ item.image.url }}  "
+                                  alt=""
+                                {% endif %}
                             />
                         </div>
                         <div class="title" style="text-align: center">

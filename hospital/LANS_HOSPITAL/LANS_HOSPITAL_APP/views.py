@@ -5,6 +5,7 @@ from .models import Room
 from .models import Feedback
 from .models import Contact
 from .models import Information
+from .models import Appointment
 
 # Create your views here.
 def say_hello(request):
@@ -53,6 +54,20 @@ def find_doctor(request):
 
 def profile(request , pk):
     doctor = Doctor.objects.get(pk=pk)
+     
+    
+    if request.method == 'POST':
+        doctor_name = doctor
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        time = request.POST.get('time')
+        date = request.POST.get('date')
+        message = request.POST.get('message')
+        
+        appointment = Appointment(doctor_name = doctor_name, name =name, email=email, time = time , date = date , message = message)
+        appointment.save()
+
+    
     return render(request ,"doctor_profile.html" , {"doctor":doctor})
 def blood_bank(request):
     return render(request ,"blood_bank.html")
