@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Doctor
 from .models import Room
+from .models import Feedback
+from .models import Contact
+from .models import Information
 
 # Create your views here.
 def say_hello(request):
@@ -38,10 +41,8 @@ def find_doctor(request):
     search_term = request.GET.get("search", "").strip()
     
     if search_term:
-        # Filter doctors based on the search term
         search_todo = Doctor.objects.filter(name__icontains=search_term)
     else:
-        # Return all doctors if no search term is provided
         search_todo = Doctor.objects.all()
     
     context = {
@@ -49,9 +50,6 @@ def find_doctor(request):
     }
     
     return render(request, "find_doctor.html", context)
-
-
-
 
 def profile(request , pk):
     doctor = Doctor.objects.get(pk=pk)
@@ -64,8 +62,44 @@ def emergency_service(request):
     return render(request ,"emergency_service.html")
 def dialysis_cantre(request):
     return render(request ,"dialysis_cantre.html")
+
+
 def feedback(request):
-    return render(request ,"feedback.html")
+    information = Information.objects.all().first()  
+    
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        subject = request.POST.get('subject')
+        message = request.POST.get('message')
+        
+        feedback = Feedback(name=name, email=email, subject=subject, feedback=message)
+        feedback.save()
+
+    context = {
+        "information": information,
+        "Email": information.Email if information else "",  
+        "Help_center": information.Help_center if information else "",  
+        "Touch": information.touch if information else "", 
+        "Address": information.Address if information else "",
+        "care_line" : information.Care_Line if information else "",
+    }
+    
+    return render(request, "feedback.html", context)
+
+def lay(request):
+    information = Information.objects.all().first()  
+    
+    context = {
+        "information": information,
+        "Email": information.Email if information else "",  
+        "Address": information.address if information else "", 
+        "care_line" : information.care_line if information else "",  
+    }
+    return render(request, "lay.html", context)
+
+
+
 def equipment(request):
     return render(request ,"equipment.html")
 def about(request):
@@ -73,5 +107,17 @@ def about(request):
 def room(request):
     rooms = Room.objects.all()
     return render(request ,"room.html" , {"rooms": rooms})
+
+
 def contact(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        subject = request.POST.get('subject')
+        message = request.POST.get('message')
+        
+        # Create a new patient entry in the database using the Patient model
+        contact = Contact(name=name, email=email, subject = subject, message = message)
+        contact.save()
+        
     return render(request ,"contact.html")

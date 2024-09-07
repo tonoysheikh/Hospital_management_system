@@ -2523,7 +2523,7 @@ section,
   padding: 1rem;
   width: 17rem;
   background-color: var(--bg-card);
-
+  min-height: 350px;
   border-radius: 1rem;
 }
 
@@ -2786,7 +2786,6 @@ section,
 .divider-custom.divider-light .divider-custom-icon {
   color: #fff;
 }
-
 
 @media only screen and (max-width: 480px) {
   .blood-content {

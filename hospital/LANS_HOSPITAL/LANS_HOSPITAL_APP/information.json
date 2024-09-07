@@ -1,0 +1,16 @@
+[
+    {
+        "model": "LANS_HOSPITAL_APP.information",
+        "pk": 1,
+        "fields": {
+          "Care_Line":"+880 13030 15394", 
+          "Address":"147/I, Green Road,Panthapath, Dhaka", 
+          "Phone":"+880 17685 12668",
+          "Email":" lanshospital@example.com",
+          "Copyright":"Side Character",
+          "Designed":"Team Null character",
+          "touch":"For any inquiries, please feel free to reach out to us at the following address.",
+          "Help_center":"+880 17879 59587"
+        }
+      }
+]

@@ -26,7 +26,7 @@
   <!-- End Page Title -->
 
   <div class="container-doctor">
-    <form method="GET">
+    <form method="GET" class = "doctor-form" style = "width:150vh;text-align:center;">
         <input
             id="searchbar"
             type="text"
@@ -34,18 +34,18 @@
             placeholder="Search Doctor..."
             value="{{ request.GET.search }}" 
         />
-        <button class="btn-primary">Search</button>
+        <button  class="btn btn-primary">Search</button>
     </form>
 
     {% if search_todo %}
         <div class="container row gy-4 mt-3">
             {% for item in search_todo %}
                 <div class="col-lg-4">
-                    <div class="card">
+                    <div class="card" style="min-height:350px;">
                         <div class="image_container-doctor">
                             <img
                                 class="image"
-                                src="{% static './assets/img/doctors/d1.png' %}"
+                                src="{ item.image_url }"
                                 alt=""
                             />
                         </div>

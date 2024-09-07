@@ -1,0 +1,34 @@
+[
+    {
+        "model": "LANS_HOSPITAL_APP.room",
+        "pk": 1,
+        "fields": {
+          "slider_big": "Welcome toLANS unity exchange hospital",
+          "slider_small": "Take an appointment at your convenient time. Or call our care line 10647 anytime."
+        }
+      },
+      {
+        "model": "LANS_HOSPITAL_APP.room",
+        "pk": 2,
+        "fields": {
+          "slider_big": "24/7 Emergency Health care center",
+          "slider_small": "Take an appointment at your convenient time. Or call our care line 10647 anytime."
+        }
+      },
+      {
+        "model": "LANS_HOSPITAL_APP.room",
+        "pk": 3,
+        "fields": {
+          "slider_big": "Mother & Child Care Center",
+          "slider_small": "Take an appointment at your convenient time. Or call our care line 10647 anytime."
+        }
+      },
+      {
+        "model": "LANS_HOSPITAL_APP.room",
+        "pk": 4,
+        "fields": {
+          "slider_big": "Normal Delivery at LANS Hospital",
+          "slider_small": "Take an appointment at your convenient time. Or call our care line 10647 anytime."
+        }
+      }
+]
