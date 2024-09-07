@@ -116,8 +116,8 @@ def contact(request):
         subject = request.POST.get('subject')
         message = request.POST.get('message')
         
-        # Create a new patient entry in the database using the Patient model
         contact = Contact(name=name, email=email, subject = subject, message = message)
         contact.save()
         
     return render(request ,"contact.html")
+

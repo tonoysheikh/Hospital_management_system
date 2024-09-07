@@ -19,11 +19,15 @@ class Doctor(models.Model):
     intro = models.TextField()
     complete = models.TextField()
     end = models.TextField()
+    def __str__(self):
+        return self.name
     
 
 class Room(models.Model):
     room_type = models.CharField(max_length=100)
     charge = models.DecimalField(max_digits=10, decimal_places=2)
+    def __str__(self):
+        return self.room_type
     
 
 class Feedback(models.Model):
@@ -32,9 +36,15 @@ class Feedback(models.Model):
     subject = models.CharField(max_length=100)
     feedback = models.TextField()
     
+    def __str__(self):
+        return self.name
+    
 class Contact(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField(max_length=100)
     subject = models.CharField(max_length=100)
     message = models.TextField()
+    
+    def __str__(self):
+        return self.name
     
