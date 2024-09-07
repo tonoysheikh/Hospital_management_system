@@ -19,7 +19,6 @@ class Doctor(models.Model):
     intro = models.TextField()
     complete = models.TextField()
     end = models.TextField()
-    image_url = models.URLField(max_length= 300)
     
 
 class Room(models.Model):
@@ -38,5 +37,4 @@ class Contact(models.Model):
     email = models.EmailField(max_length=100)
     subject = models.CharField(max_length=100)
     message = models.TextField()
-    
     

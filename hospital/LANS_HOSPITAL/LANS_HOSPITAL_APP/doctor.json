@@ -8,8 +8,8 @@
             "degree": "MBBS, DDV (SINGAPORE)",
             "intro": "Dr. A M Rejaus Satter is a physician specializing in Neuro Surgery. At Square Hospital, he has been an active team member who has helped to develop a center excelling at endoscopic pituitary surgery, aneurysm surgery, complex brain tumor surgery, minimally invasive spine surgery and other intricate brain surgeries; in the private sector of Bangladesh within a very short period of time.",
             "complete": "Completing his MBBS from Mymensingh Medical College, Dr. Reja entered into Post graduation and earned FCPS in General Surgery. Shortly after, he pursued his lifelong dream of becoming a Neuro Surgeon when he entered MS (Neuro surgery) course and obtained Masters Degree. He was trained and supervised by the best Neuro Scientists and Neuro Surgeons of both Bangladesh and India. Today, as Consultant Neuro and Spine surgeon of Square Hospital, he performed thousands of complex Neuro surgery in past years with lowest complication rates compared to the rest of the country and also some other countries.",
-            "end": "Dr. Reja has been exposed to all ranges of emergencies starting from trauma to intracerebral hematomas and strokes; entire ranges of emergency spinal decompression, brain tumors, spinal tumors, trans-sphenoidal surgery, congenital and pediatric neurosurgical disorders; degenerative spine diseases; endoscopic neurosurgical procedures; vascular disorders like aneurysms and AVMs.",
-            "image_url" : "/LANS_HOSPITAL_APP/static/assets/img/doctors/d1.png"
+            "end": "Dr. Reja has been exposed to all ranges of emergencies starting from trauma to intracerebral hematomas and strokes; entire ranges of emergency spinal decompression, brain tumors, spinal tumors, trans-sphenoidal surgery, congenital and pediatric neurosurgical disorders; degenerative spine diseases; endoscopic neurosurgical procedures; vascular disorders like aneurysms and AVMs."
+           
         }
     },
     {
@@ -21,8 +21,8 @@
             "degree": "MD (Doctor of Medicine), PhD (Doctor of Philosophy)",
             "intro": "Dr. Rahul is an expert in Medical Anthropology, with extensive experience in cultural and social aspects of health and illness.",
             "complete": "He has completed his MD in Medicine followed by a PhD in Anthropology, focusing on how culture influences medical practices.",
-            "end": "Dr. Rahul's work has been instrumental in understanding the role of traditional medicine in modern healthcare systems.",
-            "image_url" : "/LANS_HOSPITAL_APP/static/assets/img/doctors/d2.png"
+            "end": "Dr. Rahul's work has been instrumental in understanding the role of traditional medicine in modern healthcare systems."
+            
         }
     },
     {
@@ -34,8 +34,8 @@
             "degree": "MD (Doctor of Medicine), MPH (Master of Public Health)",
             "intro": "Dr. Nadiya is a skilled neurosurgeon with a focus on treating complex brain and spinal conditions.",
             "complete": "She has an MD in Neurosurgery and an MPH, giving her a comprehensive understanding of both surgical and public health approaches.",
-            "end": "Dr. Nadiya has pioneered several minimally invasive neurosurgical techniques and is known for her patient-centered care.",
-            "image_url" : "/LANS_HOSPITAL_APP/static/assets/img/doctors/d3.png"
+            "end": "Dr. Nadiya has pioneered several minimally invasive neurosurgical techniques and is known for her patient-centered care."
+           
         }
     },
     {
@@ -47,8 +47,8 @@
             "degree": "MD (Developer of the polio vaccine)",
             "intro": "Dr. Limon is a renowned virologist who has significantly contributed to the development of vaccines.",
             "complete": "With an MD in Virology, Dr. Limon has been at the forefront of vaccine research and development.",
-            "end": "His work in virology has saved countless lives through the development of effective vaccines.",
-            "image_url" : "/LANS_HOSPITAL_APP/static/assets/img/doctors/d4.png"
+            "end": "His work in virology has saved countless lives through the development of effective vaccines."
+            
         }
     },
     {
@@ -60,8 +60,8 @@
             "degree": "MD (Doctor of Medicine)",
             "intro": "Dr. Halima specializes in Infectious Diseases, working on the prevention and treatment of various infections.",
             "complete": "She earned her MD in Medicine and has focused her career on combating infectious diseases globally.",
-            "end": "Dr. Halima's research and clinical work have been pivotal in controlling outbreaks and improving patient outcomes.",
-            "image_url" : "/LANS_HOSPITAL_APP/static/assets/img/doctors/d5.png"
+            "end": "Dr. Halima's research and clinical work have been pivotal in controlling outbreaks and improving patient outcomes."
+            
         }
     },
     {
@@ -73,8 +73,8 @@
             "degree": "MD (Pioneer of the smallpox vaccine)",
             "intro": "Dr. Kunal Sarkar is an immunologist known for his groundbreaking work on vaccines, including the smallpox vaccine.",
             "complete": "He completed his MD with a focus on Immunology and played a key role in eradicating smallpox.",
-            "end": "Dr. Sarkar's contributions to immunology have had a lasting impact on global health.",
-            "image_url" : "/LANS_HOSPITAL_APP/static/assets/img/doctors/d6.png"
+            "end": "Dr. Sarkar's contributions to immunology have had a lasting impact on global health."
+            
         }
     },
     {
@@ -86,8 +86,8 @@
             "degree": "Doctor of Medicine (MD), PhD in Cardiothoracic Surgery",
             "intro": "Dr. Rupali is a leading cardiac surgeon with expertise in complex heart surgeries.",
             "complete": "She holds an MD and a PhD in Cardiothoracic Surgery, with years of experience in treating cardiac conditions.",
-            "end": "Dr. Rupali is known for her skill in performing intricate heart surgeries and improving surgical outcomes.",
-            "image_url" : "/LANS_HOSPITAL_APP/static/assets/img/doctors/d7.png"
+            "end": "Dr. Rupali is known for her skill in performing intricate heart surgeries and improving surgical outcomes."
+           
         }
     },
     {
@@ -99,8 +99,8 @@
             "degree": "Doctor of Medicine (MD)",
             "intro": "Dr. Aniruddha is a specialist in Infectious Diseases, focusing on diagnosing and treating infections.",
             "complete": "He earned his MD in Medicine and has worked extensively in both clinical and research settings.",
-            "end": "Dr. Aniruddha's expertise has been crucial in managing infectious disease outbreaks and developing treatment protocols.",
-            "image_url" : "/LANS_HOSPITAL_APP/static/assets/img/doctors/d8.png"
+            "end": "Dr. Aniruddha's expertise has been crucial in managing infectious disease outbreaks and developing treatment protocols."
+            
         }
     },
     {
@@ -112,8 +112,8 @@
             "degree": "Ph.D. (Although not a medical doctor, he is a doctor in his field)",
             "intro": "Dr. Kunal is an expert in Ethology, studying animal behavior and its implications for human health.",
             "complete": "He completed a Ph.D. in Ethology, focusing on the intersection of animal and human behaviors.",
-            "end": "Dr. Kunal's research has provided valuable insights into the evolutionary aspects of behavior.",
-            "image_url" : "/LANS_HOSPITAL_APP/static/assets/img/doctors/d9.png"
+            "end": "Dr. Kunal's research has provided valuable insights into the evolutionary aspects of behavior."
+            
         }
     },
     {
@@ -125,8 +125,8 @@
             "degree": "M.D., Ph.D.",
             "intro": "Dr. Susmita is a medical anthropologist exploring the cultural dimensions of health and medicine.",
             "complete": "She holds both an M.D. and a Ph.D., with a focus on how cultural practices influence medical outcomes.",
-            "end": "Dr. Susmita's work bridges the gap between medicine and anthropology, offering unique perspectives on healthcare.",
-            "image_url" : "/LANS_HOSPITAL_APP/static/assets/img/doctors/d10.png"
+            "end": "Dr. Susmita's work bridges the gap between medicine and anthropology, offering unique perspectives on healthcare."
+            
         }
     },
     {
@@ -138,8 +138,8 @@
             "degree": "MD (Doctor of Medicine)",
             "intro": "Dr. Bidhan is a pediatric neurosurgeon specializing in surgical treatments for children.",
             "complete": "He has an MD in Pediatric Neurosurgery and is known for his expertise in treating complex neurological conditions in children.",
-            "end": "Dr. Bidhan's compassionate approach and technical skills have made him a leader in pediatric neurosurgery.",
-            "image_url" : "/static/assets/img/doctors/d11.png"
+            "end": "Dr. Bidhan's compassionate approach and technical skills have made him a leader in pediatric neurosurgery."
+            
         }
     },
     {
@@ -151,8 +151,8 @@
             "degree": "MD (Inventor of the stethoscope)",
             "intro": "Dr. Krisna is a pulmonologist known for his contributions to respiratory medicine.",
             "complete": "He earned his MD and made significant advancements in the field of pulmonology, including the invention of the stethoscope.",
-            "end": "Dr. Krisna's work in pulmonology has been foundational in improving respiratory care.",
-            "image_url" : "/LANS_HOSPITAL_APP/static/assets/img/doctors/d12.png"
+            "end": "Dr. Krisna's work in pulmonology has been foundational in improving respiratory care."
+            
         }
     }
 ]
